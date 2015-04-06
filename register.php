@@ -11,7 +11,7 @@
 </ul>
 <p>Maybe at a later date we can have an email activation system too.</p>
 <p>After clicking the submit button, if everything's worked out alright, they should be redirected to the management portal page</p>
-<a href="portal.php">Management Portal</a>
+<a href="portal.php">Management Portal</a><br>
 <a href="index.php">Home</a>
 </body>
 </html>

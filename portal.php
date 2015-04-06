@@ -7,7 +7,7 @@
   <li>A list of their sensors, whether they're active or not</li>
   <li>A link to register new sensors</li>
 </ul>
-<a href="addsensors.php">Register New Sensors!</a>
+<a href="addsensors.php">Register New Sensors!</a><br>
 <a href="index.php">Home</a>
 </body>
 </html>
