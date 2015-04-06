@@ -10,5 +10,6 @@
   <li>Unit* (Ideally dropdown, including m and cm)</li>
 </ul>
 <p>Page should redirect back to portal once done, and show the new sensors added but inactive</p>
+<a href="index.php">Home</a>
 </body>
 </html>

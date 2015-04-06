@@ -8,5 +8,6 @@
   <li>A link to register new sensors</li>
 </ul>
 <a href="addsensors.php">Register New Sensors!</a>
+<a href="index.php">Home</a>
 </body>
 </html>
