@@ -55,8 +55,8 @@ th, td {
             echo "<td>".$row['global_id']."</td>";
             echo "<td>".$row['application']."</td>";
             echo "<td>".$row['measures']."</td>";
-            echo "<td>".$row['active']."</td></tr>";
-            echo "<button type='submit'>Deactivate</button>";
+            echo "<td>".$row['active']."</td>";
+            echo "<td><button type='submit'>Deactivate</button></td></tr>";
         }
         echo "</table>";
     } else {
