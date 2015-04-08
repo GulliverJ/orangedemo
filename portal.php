@@ -17,7 +17,7 @@
     $opid = 2;
 
     // Connection info
-    $host = "localhost:3306";
+    $host = "localhost";
     $user = "portal";
     $pwd = "mgmtport";
     $db = "orangesystem";
