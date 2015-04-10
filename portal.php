@@ -26,8 +26,8 @@ th, td {
 
     // Connection info
     $host = "localhost";
-    $user = "portal";
-    $pwd = "mgmtport";
+    $user = "GTAdmin";
+    $pwd = "COMP2010g10";
     $db = "orangesystem";
     
     // Connect to database
