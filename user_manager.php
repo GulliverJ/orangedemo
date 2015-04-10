@@ -131,14 +131,12 @@
 	 if( UserLogin( $username, $password ) )
 	 {
 		 // We're logged in:
-		 die( 'true' );
 		 header("location:portal.php");
 	 }
 	 else
 	 {
 		 // The login failed:
 	 	header("location:index.php");
-		 die( 'false' );
 	 }
  }
  else if( isset( $_POST['logout'] ) && $_POST['logout'] == true )
