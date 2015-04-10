@@ -1,5 +1,5 @@
 <?php
-session.start();
+ require( 'user_manager.php' );
 ?>
 <!DOCTYPE html>
 <html>
