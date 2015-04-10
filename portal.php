@@ -26,8 +26,8 @@ th, td {
 
     // Connection info
     $host = "localhost";
-    $user = "root";
-    $pwd = "comp2014g10";
+    $user = "sensors";
+    $pwd = "sensors";
     $db = "orangesystem";
     
     // Connect to database
@@ -38,7 +38,7 @@ th, td {
         die(var_dump($e));
     }
     
-    $sql_insert = "INSERT INTO identifiers(operator_id, identifier) VALUES (990, 'abcdefgh');";
+    $sql_insert = "INSERT INTO identifiers(operator_id, identifier) VALUES (991, 'abc3efgh');";
     $stmt = $conn->prepare($sql_insert);
     $stmt->execute();
 
