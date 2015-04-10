@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <body>
+<head>
+<style>
+th, td {
+     border-top: 1px solid gray;
+     padding-left: 5px;
+     padding-right: 5px;
+}
+</style>
+</head>
 <h1>Portal, for registered users only</h1>
 <p>This page should display the following:</p>
 <ul>
@@ -9,7 +18,6 @@
 </ul>
 <a href="addsensors.php">Register New Sensors!</a><br>
 <a href="index.php">Home</a>
-<!-- Maybe give people the option to deactivate their sensors...!!!!-->
 
 <?php
 
@@ -47,7 +55,8 @@
             echo "<td>".$row['global_id']."</td>";
             echo "<td>".$row['application']."</td>";
             echo "<td>".$row['measures']."</td>";
-            echo "<td>".$row['active']."</td></tr>";
+            echo "<td>".$row['active']."</td>";
+            echo "<td><button type='submit'>Deactivate</button></td></tr>";
         }
         echo "</table>";
     } else {
