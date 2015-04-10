@@ -13,7 +13,7 @@
 	 $contact = $_POST['contact_name'];
 	 $password = $_POST['pass'];
 	 $email = $_POST['email'];
-
+/*
 	 // Check to see if that username exists:
 	 $sql_statement = $connection->prepare( "SELECT COUNT(*) FROM operators WHERE `company` = ? LIMIT 1;" );
 	 $sql_statement->execute( array( $company ) );
@@ -21,11 +21,11 @@
 	 {
 		 // That username already exists:
 		 die( "That username already exists" );
-	 }
+	 }*/
 	 // Add the user to the database:
 	 $sql_statement = $connection->prepare( "INSERT INTO operators(company, password, contact_name, contact_address) VALUES (?, ?, ?, ?);" );
 	 $sql_statement->execute( array( $company, $pass, $contact, $email ) );
-
+/*
 	 // Get the user's operator ID:
 	 $sql_statement = $connection->prepare("SELECT operator_id FROM operators WHERE company = ?;");
 	 $sql_statement->execute(array($company));
@@ -37,7 +37,7 @@
 
 	 $sql_statement = $connection->prepare("INSERT INTO identifiers(operator_id, identifier) VALUES (?, ?);");
 	 $sql_statement->execute(array($operator_id, $identifier));
-
+*/
     /*
     $sql_insert = "INSERT INTO identifiers(operator_id, identifier) VALUES (991, 'abc3efgh');";
     $stmt = $conn->prepare($sql_insert);
