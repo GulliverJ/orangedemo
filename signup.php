@@ -1,4 +1,5 @@
 <?php
+	ini_set('display_errors', 1);
 
  $server_name = "localhost";
  $db_name = "orangesystem";
