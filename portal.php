@@ -37,11 +37,11 @@ th, td {
     } catch(Exception $e) {
         die(var_dump($e));
     }
-    
+    /*
     $sql_insert = "INSERT INTO identifiers(operator_id, identifier) VALUES (990, 'abcdefgh');";
     $stmt = $conn->prepare($sql_insert);
     $stmt->execute();
-
+*/
     // Sensors table
     echo "<br><h2>My Sensors (rough, ugly version! Use source code for reference) </h2>";
     $sql_select = "SELECT sensor_id, global_id, application, measures, active FROM sensors WHERE operator_id = {$opid};";
