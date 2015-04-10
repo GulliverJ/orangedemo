@@ -4,9 +4,9 @@
 <h1>Register</h1>
 <form name="signup" method="post" action="signup.php" id="signup-form" novalidate>
   <label for="username">Username (e.g. Company name):</label>
-  <input name="username" id="company_name" class="form-control" type="text" placeholder="Choose a username" title="Enter your username">
+  <input name="company_name" id="company_name" class="form-control" type="text" placeholder="Choose a username" title="Enter your username">
   <label for="username">Contact Name:</label>
-  <input name="username" id="contact_name" class="form-control" type="text" placeholder="Choose a username" title="Enter your username">
+  <input name="contact_name" id="contact_name" class="form-control" type="text" placeholder="Choose a username" title="Enter your username">
   <label for="pass">Password:</label>
   <input name="pass" id="pass" type="password" placeholder="Choose a password" title="Enter your password">
   <label for="email">Email Address:</label>
