@@ -25,7 +25,7 @@ th, td {
 <?php
 
     // User info will be loaded into session, including their name and operator ID.
-    $opid = 2;
+    $opid = $_SESSION['operator_id'];
 
     // Connection info
     $host = "localhost";
