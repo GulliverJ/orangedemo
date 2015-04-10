@@ -40,6 +40,7 @@ th, td {
     
     $sql_insert = "INSERT INTO identifiers(operator_id, identifier) VALUES (990, 'abcdefgh');";
     $stmt = $conn->prepare($sql_insert);
+    $stmt->execute();
 
     // Sensors table
     echo "<br><h2>My Sensors (rough, ugly version! Use source code for reference) </h2>";
