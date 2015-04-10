@@ -26,8 +26,8 @@ th, td {
 
     // Connection info
     $host = "localhost";
-    $user = "GTAdmin";
-    $pwd = "COMP2010g10";
+    $user = "portal";
+    $pwd = "mgmtport";
     $db = "orangesystem";
     
     // Connect to database
@@ -38,6 +38,10 @@ th, td {
         die(var_dump($e));
     }
     
+    $sql_insert = "INSERT INTO identifiers(operator_id, identifier) VALUES (990, 'abcdefgh');";
+    $stmt = $conn->prepare($sql_insert);
+    $stmt->execute();
+
     // Sensors table
     echo "<br><h2>My Sensors (rough, ugly version! Use source code for reference) </h2>";
     $sql_select = "SELECT sensor_id, global_id, application, measures, active FROM sensors WHERE operator_id = {$opid};";
