@@ -37,8 +37,8 @@
 	 $sql_statement = $connection->prepare("INSERT INTO identifiers(operator_id, identifier) VALUES (?, ?);");
 	 $sql_statement->execute(array($operator_id, $identifier));
 
-	 $sql_statement = $connection->prepare("CREATE USER '{$company}'@'localhost' IDENTIFIED BY '{$password}'; GRANT SELECT ON orangesystem.sensors TO '{$company}'@'localhost';");
-
+	 $sql_statement = $connection->prepare("CREATE USER '?'@'localhost' IDENTIFIED BY '?'; GRANT SELECT ON orangesystem.sensors TO '?'@'localhost';");
+	 $sql_statement->execute(array($company, $password, $company));
 
  }
  catch( PDOException $e )
