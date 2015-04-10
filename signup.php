@@ -34,7 +34,7 @@
 	 echo "<p>Operator Id: {$operator_id}</p>";
 	 // Generate a random identifier code
 	 $identifier = GenerateIdentifier( $connection );
-
+	echo "<p>Identifier: {$identifier}</p>";
 	 $sql_statement = $connection->prepare("INSERT INTO identifiers(operator_id, identifier) VALUES (?, ?);");
 	 $sql_statement->execute(array($operator_id, $identifier));
 
@@ -59,7 +59,7 @@
 	   {
 		   $string .= $alphabet[ rand( 0, strlen($alphabet)-1 ) ];
 	   }
-		 
+		 echo $string;
 		 // Check to see if there is a user with this random string:
 		 $sql_statement->execute( array( $string ) );	 
 		 if( $sql_statement->fetchColumn() <= 0 )
