@@ -31,12 +31,14 @@
 	 $sql_statement->execute(array($company));
 
 	 $operator_id = $sql_statement->fetchColumn();
-	 echo "<p>Operator Id: {$operator_id}</p>";
+
 	 // Generate a random identifier code
 	 $identifier = GenerateIdentifier( $connection );
-	echo "<p>Identifier: {$identifier}</p>";
 	 $sql_statement = $connection->prepare("INSERT INTO identifiers(operator_id, identifier) VALUES (?, ?);");
 	 $sql_statement->execute(array($operator_id, $identifier));
+
+	 $sql_statement = $connection->prepare("CREATE USER '{$company}'@'localhost' IDENTIFIED BY '{$password}'; GRANT SELECT ON orangesystem.sensors TO '{$company}'@'localhost';");
+
 
  }
  catch( PDOException $e )
@@ -51,17 +53,17 @@
  {
 	 $sql_statement = $connection->prepare( "SELECT COUNT(*) FROM identifiers WHERE `identifier` = ? LIMIT 1" );
 	
-		 $alphabet = '0123456789abcdefghijklmnopqrstuvxyz';
-	 	 $string = "";
+	 $alphabet = '0123456789abcdefghijklmnopqrstuvxyz';
+	 $string = "";
 	  
-	   for( $i = 0; $i < 8; $i++ ) 
-	   {
-		   $string .= $alphabet[ rand( 0, strlen($alphabet)-1 ) ];
-	   }
-		 echo $string;
-		 // Check to see if there is a user with this random string:
-		 $sql_statement->execute( array( $string ) );	 
-		 if( $sql_statement->fetchColumn() <= 0 )
+	 for( $i = 0; $i < 8; $i++ ) 
+	 {
+	  $string .= $alphabet[ rand( 0, strlen($alphabet)-1 ) ];
+	 }
+
+   // Check to see if there is a user with this random string:
+   $sql_statement->execute( array( $string ) );	 
+	 if( $sql_statement->fetchColumn() <= 0 )
 		 {
 			 return $string;
 		 }
