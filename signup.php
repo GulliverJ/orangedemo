@@ -11,7 +11,7 @@
 	 
 	 $company = $_POST['company_name'];
 	 $contact = $_POST['contact_name'];
-	 $password = $_POST['pass'];
+	 $password = $_POST['password'];
 	 $email = $_POST['email'];
 /*
 	 // Check to see if that username exists:
@@ -24,7 +24,7 @@
 	 }*/
 	 // Add the user to the database:
 	 $sql_statement = $connection->prepare( "INSERT INTO operators(company, password, contact_name, contact_address) VALUES (?, ?, ?, ?);" );
-	 $sql_statement->execute( array( $company, $pass, $contact, $email ) );
+	 $sql_statement->execute( array( $company, $password, $contact, $email ) );
 /*
 	 // Get the user's operator ID:
 	 $sql_statement = $connection->prepare("SELECT operator_id FROM operators WHERE company = ?;");
