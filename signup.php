@@ -46,6 +46,7 @@
  }
  catch( PDOException $e )
  {
+ 	 var_dump($e);
 	 die( "There was an internal database error whilst creating your user, error code (" . $e->getCode() . ")" );
  }
  
