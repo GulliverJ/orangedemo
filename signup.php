@@ -25,7 +25,7 @@
 	 // Add the user to the database:
 	 $sql_statement = $connection->prepare( "INSERT INTO operators(company, password, contact_name, contact_address) VALUES (?, ?, ?, ?);" );
 	 $sql_statement->execute( array( $company, $password, $contact, $email ) );
-/*
+
 	 // Get the user's operator ID:
 	 $sql_statement = $connection->prepare("SELECT operator_id FROM operators WHERE company = ?;");
 	 $sql_statement->execute(array($company));
@@ -37,12 +37,7 @@
 
 	 $sql_statement = $connection->prepare("INSERT INTO identifiers(operator_id, identifier) VALUES (?, ?);");
 	 $sql_statement->execute(array($operator_id, $identifier));
-*/
-    /*
-    $sql_insert = "INSERT INTO identifiers(operator_id, identifier) VALUES (991, 'abc3efgh');";
-    $stmt = $conn->prepare($sql_insert);
-    $stmt->execute();
-*/
+
  }
  catch( PDOException $e )
  {
