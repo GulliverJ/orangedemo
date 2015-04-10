@@ -50,8 +50,7 @@
  function GenerateIdentifier( $connection ) 
  {
 	 $sql_statement = $connection->prepare( "SELECT COUNT(*) FROM identifiers WHERE `identifier` = ? LIMIT 1" );
-	 while( false )
-	 {
+	
 		 $alphabet = '0123456789abcdefghijklmnopqrstuvxyz';
 	 	 $string = "";
 	  
@@ -66,7 +65,7 @@
 		 {
 			 return $string;
 		 }
-	 }
+
  }
 
 ?>
