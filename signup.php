@@ -43,6 +43,7 @@
 	 $sql_statement = $connection->prepare("GRANT SELECT ON orangesystem.sensors TO '" . $company . "'@'localhost';");
 	 $sql_statement->execute();
 
+	 header("location:index.php");
 
  }
  catch( PDOException $e )
