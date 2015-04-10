@@ -31,7 +31,7 @@
 	 $sql_statement->execute(array($company));
 
 	 $operator_id = $sql_statement->fetchColumn();
-
+	 echo "<p>Operator Id: {$operator_id}</p>";
 	 // Generate a random identifier code
 	 $identifier = GenerateIdentifier( $connection );
 
