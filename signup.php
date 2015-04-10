@@ -13,7 +13,7 @@
 	 $contact = $_POST['contact_name'];
 	 $password = $_POST['password'];
 	 $email = $_POST['email'];
-/*
+
 	 // Check to see if that username exists:
 	 $sql_statement = $connection->prepare( "SELECT COUNT(*) FROM operators WHERE `company` = ? LIMIT 1;" );
 	 $sql_statement->execute( array( $company ) );
@@ -21,7 +21,8 @@
 	 {
 		 // That username already exists:
 		 die( "That username already exists" );
-	 }*/
+	 }
+
 	 // Add the user to the database:
 	 $sql_statement = $connection->prepare( "INSERT INTO operators(company, password, contact_name, contact_address) VALUES (?, ?, ?, ?);" );
 	 $sql_statement->execute( array( $company, $password, $contact, $email ) );
@@ -37,13 +38,13 @@
 	 $sql_statement = $connection->prepare("INSERT INTO identifiers(operator_id, identifier) VALUES (?, ?);");
 	 $sql_statement->execute(array($operator_id, $identifier));
 
+	 // Create new mysql user for this operator and grant permissions to select TODO: they may no longer need a user
 	 $sql_statement = $connection->prepare("CREATE USER '" . $company . "'@'localhost' IDENTIFIED BY '" . $password . "';");
 	 $sql_statement->execute();
-
 	 $sql_statement = $connection->prepare("GRANT SELECT ON orangesystem.sensors TO '" . $company . "'@'localhost';");
 	 $sql_statement->execute();
 
-	 header("location:index.php");
+	 header("location:portal.php");
 
  }
  catch( PDOException $e )
