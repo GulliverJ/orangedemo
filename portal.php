@@ -27,7 +27,7 @@ if(LoggedIn()) {
 <a href="addsensors.php">Register New Sensors!</a><br>
 <a href="index.php">Home</a>
 
-</php
+<?php
 
     // User info will be loaded into session, including their name and operator ID.
     $opid = $_SESSION['operator_id'];
