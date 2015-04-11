@@ -18,7 +18,7 @@ th, td {
 <?php
 if(LoggedIn()) { ?>
     <h4>Logged in as <?php echo GetUserName(); ?>.</h4>
-    <button type="submit" name="login" onclick="logout.php">Log out</button><?php
+    <a href="logout.php">Log out</button><?php
 }
 ?>
 
