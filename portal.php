@@ -17,7 +17,7 @@ th, td {
 
 <?php
 if(LoggedIn()) { ?>
-    <h4>Logged in as {$_SESSION['username']}</h4><?php
+    <h4>Logged in as <?php echo GetUserName(); ?></h4><?php
 }
 ?>
 
