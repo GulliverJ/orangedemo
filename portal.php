@@ -18,7 +18,7 @@ th, td {
 <?php
 if(LoggedIn()) { ?>
     <h4>Logged in as <?php echo GetUserName(); ?>.</h4>
-    <a href="logout.php">Log out</button><?php
+    <a href="logout.php">Log out</a><?php
 }
 ?>
 
@@ -77,7 +77,7 @@ if(LoggedIn()) {
         echo "<h3>Empty set</h3>";
     }
 } else { ?>
-<h3>You are not logged in. Click <a href="index.html">here</a> to log in.</h3>
+<h3>You are not logged in. Click <a href="index.php">here</a> to log in.</h3>
 <?php
 }?>
 
