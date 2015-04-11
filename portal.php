@@ -13,6 +13,11 @@ th, td {
 }
 </style>
 </head>
+<?php
+if(LoggedIn()) {
+    <h3>Logged in as $_SESSION['username']</h3>
+}
+?>
 <h1>Portal, for registered users only</h1>
 <p>This page should display the following:</p>
 <ul>
@@ -22,7 +27,7 @@ th, td {
 <a href="addsensors.php">Register New Sensors!</a><br>
 <a href="index.php">Home</a>
 
-<?php
+</php
 
     // User info will be loaded into session, including their name and operator ID.
     $opid = $_SESSION['operator_id'];
