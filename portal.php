@@ -69,8 +69,7 @@ if(LoggedIn()) {
             echo "<tr><td>".$row['sensor_id']."</td>";
             echo "<td>".$row['global_id']."</td>";
             echo "<td>".$row['application']."</td>";
-            echo "<td>".$row['measures']."</td>";
-            echo "<td>".$row['active']."</td></tr>";
+            echo "<td>".$row['measures']."</td></tr>";
         }
         echo "</table>";
     } else {
