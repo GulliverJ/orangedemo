@@ -15,7 +15,7 @@ th, td {
 </head>
 <?php
 if(LoggedIn()) {
-    <h3>Logged in as $_SESSION['username']</h3>
+    echo "<h3>Logged in as $_SESSION['username']</h3>";
 }
 ?>
 <h1>Portal, for registered users only</h1>
