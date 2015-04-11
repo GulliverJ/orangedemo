@@ -12,7 +12,14 @@ th, td {
      padding-right: 5px;
 }
 </style>
+
 </head>
+
+<?php
+if(LoggedIn()) { ?>
+    <h3>Logged in as $_SESSION['username']</h3><?php
+}
+?>
 
 <h1>Portal, for registered users only</h1>
 <p>This page should display the following:</p>
@@ -59,8 +66,7 @@ th, td {
             echo "<td>".$row['global_id']."</td>";
             echo "<td>".$row['application']."</td>";
             echo "<td>".$row['measures']."</td>";
-            echo "<td>".$row['active']."</td>";
-            echo "<td><button type='submit'>Deactivate</button></td></tr>";
+            echo "<td>".$row['active']."</td></tr>";
         }
         echo "</table>";
     } else {
