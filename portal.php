@@ -17,16 +17,13 @@ th, td {
 
 <?php
 if(LoggedIn()) { ?>
-    <h4>Logged in as <?php echo GetUserName(); ?></h4><?php
+    <h4>Logged in as <?php echo GetUserName(); ?>.</h4>
+    <button type="submit" name="login" onclick="logout.php">Log out</button>
 }
 ?>
 
 <h1>Portal, for registered users only</h1>
-<?php
-if(LoggedIn()) { ?>
-    <h4>Logged in as <?php echo GetUserName(); ?></h4><?php
-}
-?>
+
 <p>This page should display the following:</p>
 <ul>
   <li>A list of their sensors, whether they're active or not</li>
@@ -38,8 +35,6 @@ if(LoggedIn()) { ?>
 <?php
 
 if(LoggedIn()) {
-
-
 
     // User info will be loaded into session, including their name and operator ID.
     $opid = $_SESSION['operator_id'];
