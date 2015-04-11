@@ -13,11 +13,7 @@ th, td {
 }
 </style>
 </head>
-<?php
-if(LoggedIn()) {
-    echo "<h3>Logged in as $_SESSION['username']</h3>";
-}
-?>
+
 <h1>Portal, for registered users only</h1>
 <p>This page should display the following:</p>
 <ul>
