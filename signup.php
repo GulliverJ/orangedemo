@@ -39,10 +39,11 @@
 	 $sql_statement->execute(array($operator_id, $identifier));
 
 	 // Create new mysql user for this operator and grant permissions to select TODO: they may no longer need a user
+	 /*
 	 $sql_statement = $connection->prepare("CREATE USER '" . $company . "'@'localhost' IDENTIFIED BY '" . $password . "';");
 	 $sql_statement->execute();
 	 $sql_statement = $connection->prepare("GRANT SELECT ON orangesystem.sensors TO '" . $company . "'@'localhost';");
-	 $sql_statement->execute();
+	 $sql_statement->execute();*/
 
 	 header("location:portal.php");
 
