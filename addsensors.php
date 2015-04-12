@@ -4,6 +4,49 @@
 
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Orange Sensors</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <style>
+    #map- {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      height: 350px;
+    }
+  </style>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+  <script>
+
+window.onload = function() {
+  google.maps.event.addDomListener(window, 'load', initialize);
+
+  var latlng = new google.maps.LatLng(51.524636, -0.132036);
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: latlng,
+    zoom: 9,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  });
+  var marker = new google.maps.Marker({
+    position: latlng,
+    map: map,
+    title: 'Set lat/lon values for this property',
+    draggable: true
+  });
+  google.maps.event.addListener(marker, 'dragend', function(a) {
+    console.log(a);
+    // bingo!
+    // a.latLng contains the co-ordinates where the marker was dropped
+  });
+}
+
+
+
+  </script>
+</head>
+
+
 <body>
 
 <?php
@@ -49,6 +92,8 @@ if(!LoggedIn()) { ?>
     <option value="K">Kelvin</option>
   </select>
     <!-- TODO: click on google map and have this auto-filled -->
+    <div id="map">
+    </div>
   <label for="lat">Latitude</label>
   <input name="lat" id="lat" type="number" step="0.000001" placeholder="Lat">
   <label for="lng">Longitude</label>
