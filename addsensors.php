@@ -1,7 +1,6 @@
 <?php
  require('user_manager.php');
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,13 +58,10 @@
 <body onload="initialize()">
 
 <?php
-if(!LoggedIn()) {
+if(LoggedIn()) {
 ?>
-  <h4>You must be logged in to add sensors. Click <a href="index.php">here</a> to log in.</h4>
-<?php
-} else {
-?>
-
+<!-- Any HTML code to be displayed for a user who IS logged in goes here -->
+<a href="index.php">Home</a>
 <h1>Add new sensors</h1><br>
 <form name="addsensor" method="post" action="sensor_manager.php" id="addsensor" novalidate>
   <label for="application">Sensor Application</label>
@@ -84,7 +80,7 @@ if(!LoggedIn()) {
     <option value="temperature">Temperature</option>
     <option value="windspeed">Windspeed</option>
   </select><br><br>
-  <!-- TODO: make this intelligent with JQuery -->
+  <!-- TODO: make this intelligent with JQuery (show distance units when "distance" is selected) -->
   <label for="unit">Which unit will the data have?</label>
   <select name="unit" id="unit" style="width: 350px">
     <option value="" selected disabled>Choose a unit</option>
@@ -112,10 +108,14 @@ if(!LoggedIn()) {
 </form>
 
 <?php
+} else {
+?>
+  <!-- Any HTML code to be displayed for a user who isn't logged in goes here -->
+<h4>You must be logged in to add sensors. Click <a href="index.php">here</a> to log in.</h4>
+
+<?php
 }
 ?>
-
-<a href="index.php">Home</a>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@ th, td {
      padding-right: 5px;
 }
 </style>
-
+<title>Orange Sensors</title>
 </head>
 
 <?php
@@ -63,8 +63,7 @@ if(LoggedIn()) {
         echo "<tr><th>Sensor ID</th>";
         echo "<th>Global ID</th>";
         echo "<th>Application Label</th>";
-        echo "<th>Measures</th>";
-        echo "<th>Active</th></tr>";
+        echo "<th>Measures</th></tr>";
         foreach($results as $row) {
             echo "<tr><td>".$row['sensor_id']."</td>";
             echo "<td>".$row['global_id']."</td>";

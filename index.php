@@ -1,10 +1,11 @@
 <?php
  require( 'user_manager.php' );
 ?>
-
 <!DOCTYPE html>
-
 <html>
+<head>
+  <title>Orange Sensors</title>
+</head>
 <body>
 <h1>Orange Sensors</h1>
 
@@ -15,6 +16,7 @@ if(LoggedIn()) { ?>
     <a href="portal.php">Manage my sensors</a><?php
 } else {
 ?>
+
 <a href="register.php">Sign up!</a>
 <h3>Log in!</h3>
 <form name="login" method="post" action="user_manager.php" id="login" novalidate>
@@ -24,6 +26,7 @@ if(LoggedIn()) { ?>
   <input name="password" id="password" type="password" placeholder="Password" title="Enter your password">
   <button type="submit" name="login">Log in</button>
 </form>
+
 <?php
 }
 ?>
