@@ -43,8 +43,9 @@ function initialize() {
 
 google.maps.event.addListener(map, "idle", function() {
         marker.setPosition(map.getCenter());
-        document.getElementById("latin").innerHTML = map.getCenter().lat().toFixed(6);
-        document.getElementById("lngin").innerHTML = map.getCenter().lat().toFixed(6);
+        
+        document.getElementById("latin").val = map.getCenter().lat().toFixed(6);
+        document.getElementById("lngin").val = map.getCenter().lng().toFixed(6);
       });
       google.maps.event.addListener(marker, "dragend", function(mapEvent) {
         map.panTo(mapEvent.latLng);
