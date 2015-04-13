@@ -76,7 +76,7 @@ if(!LoggedIn()) { ?>
 <h3>Log in!</h3>
 <form name="addsensor" method="post" action="sensor_manager.php" id="addsensor" novalidate>
   <label for="application">Sensor Application</label>
-  <input name="application" id="application" type="text" placeholder="Label your sensor">
+  <input name="application" id="application" type="text" placeholder="Label your sensor"><br>
   <label for="measures">What does the sensor measure?</label>
   <select name="measures" id="measures" style="width: 350px">
     <option value="" selected disabled>Choose a property</option>
@@ -90,7 +90,7 @@ if(!LoggedIn()) { ?>
     <option value="rainfall">Rainfall</option>
     <option value="temperature">Temperature</option>
     <option value="windspeed">Windspeed</option>
-  </select>
+  </select><br>
   <!-- TODO: make this intelligent with JQuery -->
   <label for="unit">Which unit will the data have?</label>
   <select name="unit" id="unit" style="width: 350px">
@@ -107,17 +107,17 @@ if(!LoggedIn()) { ?>
     <option value="C">Celcius</option>
     <option value="F">Fahrenheit</option>
     <option value="K">Kelvin</option>
-  </select>
-    <!-- TODO: click on google map and have this auto-filled -->
-
+  </select><br>
+  <p>Where exactly will your sensor be positioned</p>
   <label for="lat">Latitude</label>
-  <input name="lat" id="latin" type="text" step="0.000001" placeholder="Lat" value = "">
+  <input name="lat" id="latin" type="number" step="0.000001" placeholder="Lat" value = ""><br>
   <label for="lng">Longitude</label>
-  <input name="lng" id="lngin" type="number" step="0.000001" placeholder="Lng" value - "">
+  <input name="lng" id="lngin" type="number" step="0.000001" placeholder="Lng" value - ""><br>
   <button type="submit" name="add">Register this sensor</button>
-</form>
-    <div id="map">
+      <div id="map">
     </div>
+</form>
+
 <?php
 } ?>
 <a href="index.php">Home</a>
