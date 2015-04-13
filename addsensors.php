@@ -29,7 +29,7 @@ function initialize() {
       mapOptions);
 
   var marker = new google.maps.Marker({
-    position: myLatLngng,
+    position: myLatLng,
     map: map,
     title: 'Set lat/lon values for this property',
     draggable: true
