@@ -13,7 +13,7 @@
       height: 350px;
     }
   </style>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
   <script>
 
 function initialize() {
@@ -35,7 +35,7 @@ function initialize() {
   infowindow.open(map);
 
   var marker = new google.maps.Marker({
-    position: myLatLng,
+    position: myLatLngng,
     map: map,
     title: 'Set lat/lon values for this property',
     draggable: true
@@ -46,7 +46,6 @@ function initialize() {
     map.setCenter(myLatLng);
     infowindow.setContent('Zoom: ' + zoomLevel);
   });
-}
 
 google.maps.event.addListener(marker, 'dragend', function(a) {
   console.log(a);
