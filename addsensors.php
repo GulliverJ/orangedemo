@@ -31,10 +31,11 @@ function initialize() {
     content: 'Change the zoom level',
     position: myLatLng
   });
+
   infowindow.open(map);
 
   var marker = new google.maps.Marker({
-    position: latlng,
+    position: myLatLng,
     map: map,
     title: 'Set lat/lon values for this property',
     draggable: true
