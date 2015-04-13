@@ -10,8 +10,7 @@
   <meta charset="utf-8">
   <style>
     #map {
-      margin: 0px;
-      padding: 0px;
+      width: 350px;
       height: 350px;
     }
   </style>
