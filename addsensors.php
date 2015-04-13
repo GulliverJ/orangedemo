@@ -9,14 +9,14 @@
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <style>
-    #map- {
+    #map {
       width: 100%;
       margin: 0px;
       padding: 0px;
       height: 350px;
     }
   </style>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
   <script>
 
 window.onload = function() {
