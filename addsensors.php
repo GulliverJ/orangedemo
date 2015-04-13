@@ -15,32 +15,47 @@
       height: 350px;
     }
   </style>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
   <script>
 
-window.onload = function() {
-  google.maps.event.addDomListener(window, 'load', initialize);
-
-  var latlng = new google.maps.LatLng(51.524636, -0.132036);
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: latlng,
-    zoom: 9,
+function initialize() {
+  var myLatLng = new google.maps.LatLng(51.524636, -0.132036);
+  var mapOptions = {
+    zoom: 15,
+    center: myLatLng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'),
+      mapOptions);
+
+  var infowindow = new google.maps.InfoWindow({
+    content: 'Change the zoom level',
+    position: myLatLng
   });
+  infowindow.open(map);
+
   var marker = new google.maps.Marker({
     position: latlng,
     map: map,
     title: 'Set lat/lon values for this property',
     draggable: true
   });
-  google.maps.event.addListener(marker, 'dragend', function(a) {
-    console.log(a);
-    // bingo!
-    // a.latLng contains the co-ordinates where the marker was dropped
+
+  google.maps.event.addListener(map, 'zoom_changed', function() {
+    var zoomLevel = map.getZoom();
+    map.setCenter(myLatLng);
+    infowindow.setContent('Zoom: ' + zoomLevel);
   });
 }
 
+google.maps.event.addListener(marker, 'dragend', function(a) {
+  console.log(a);
+  // bingo!
+  // a.latLng contains the co-ordinates where the marker was dropped
+});
 
+google.maps.event.addDomListener(window, 'load', initialize);
 
   </script>
 </head>
