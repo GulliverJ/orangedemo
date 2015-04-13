@@ -6,6 +6,7 @@
   $db_name = "orangesystem";
   $db_username = "sensors";
   $db_password = "sensors";  
+  $port = 2015;
 
   try {
     $connection = new PDO( "mysql:host=$server_name;dbname=$db_name", $db_username, $db_password );
@@ -33,9 +34,18 @@
     $sql_statement = $connection->prepare( "INSERT INTO sensors(operator_id, sensor_id, application, measures, unit, lat, lng) VALUES (?, ?, ?, ?, ?, ?, ?);" );
     $sql_statement->execute( array( $_SESSION['operator_id'], $sensor_id, $application, $measures, $unit, $lat, $lng));
 
-    // At this point, the code should communicate to Java that a new sensor has been added.
-    // The java code initialises the sensor in the Cassandra table, and once that is done it
-    // sets the sensor as 'active' in this SQL table.
+    $sql_statement = $connection->prepare( "SELECT global_id FROM sensors WHERE operator_id = {$_SESSION['operator_id']} AND sensor_id = {$sensor_id};" );
+    $sql_statement->execute();
+    
+    $global_id = $sql_statement->fetchColumn();
+
+    // Send the global_id and metadata to the waiting Java initialiser
+    
+    $data = $global_id . "\n" . $lat . "\n" . $lng . "\n" . $application . "\n" . $measures . "\n" . $unit;
+    
+    $socket = socket_create(AF_INET, SOCK_STREAM, 0) or die("Could not create socket\n");
+    $succ = socket_connect($socket, $server_name, $port) or die("Could not connect to host\n");
+    socket_write($socket, $data, strlen($data) + 1) or die("Could not initialise sensor; please try again later\n");
 
     header("location:portal.php");
 
