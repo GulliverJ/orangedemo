@@ -37,7 +37,7 @@
 
       google.maps.event.addListener(map, 'zoom_changed', function() {
         var zoomLevel = map.getZoom();
-        map.setCenter(myLatLng);
+        map.setCenter(map.getCenter());
         infowindow.setContent('Zoom: ' + zoomLevel);
       });
 
