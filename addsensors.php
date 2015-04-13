@@ -105,14 +105,15 @@ if(!LoggedIn()) { ?>
     <option value="K">Kelvin</option>
   </select>
     <!-- TODO: click on google map and have this auto-filled -->
-    <div id="map">
-    </div>
+
   <label for="lat">Latitude</label>
   <input name="lat" id="lat" type="number" step="0.000001" placeholder="Lat">
   <label for="lng">Longitude</label>
   <input name="lng" id="lng" type="number" step="0.000001" placeholder="Lng">
   <button type="submit" name="add">Register this sensor</button>
 </form>
+    <div id="map">
+    </div>
 <?php
 } ?>
 <a href="index.php">Home</a>
