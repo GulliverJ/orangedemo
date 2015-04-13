@@ -6,7 +6,6 @@
 <html>
 <head>
   <title>Orange Sensors</title>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <style>
     #map {
