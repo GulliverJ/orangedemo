@@ -12,7 +12,7 @@
     $connection = new PDO( "mysql:host=$server_name;dbname=$db_name", $db_username, $db_password );
     $connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
     
-    $application = $_POST['application'];
+    $application = isset( $_POST['application'] ) ? $_POST['application'] : ""; // Application field isn't required
     $measures = $_POST['measures'];
     $unit = $_POST['unit'];
     $lat = $_POST['lat']; 
