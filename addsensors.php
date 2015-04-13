@@ -111,9 +111,9 @@ if(!LoggedIn()) { ?>
     <!-- TODO: click on google map and have this auto-filled -->
 
   <label for="lat">Latitude</label>
-  <input name="lat" id="latin" type="number" step="0.000001" placeholder="Lat">
+  <input name="lat" id="latin" type="text" step="0.000001" placeholder="Lat" value = "">
   <label for="lng">Longitude</label>
-  <input name="lng" id="lngin" type="number" step="0.000001" placeholder="Lng">
+  <input name="lng" id="lngin" type="number" step="0.000001" placeholder="Lng" value - "">
   <button type="submit" name="add">Register this sensor</button>
 </form>
     <div id="map">
@@ -121,5 +121,6 @@ if(!LoggedIn()) { ?>
 <?php
 } ?>
 <a href="index.php">Home</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </body>
 </html>
