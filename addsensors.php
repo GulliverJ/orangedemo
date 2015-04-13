@@ -9,8 +9,8 @@
   <meta charset="utf-8">
   <style>
     #map {
-      width: 350px;
-      height: 350px;
+      width: 100%;
+      height: 500px;
     }
   </style>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
@@ -28,13 +28,6 @@ function initialize() {
   var map = new google.maps.Map(document.getElementById('map'),
       mapOptions);
 
-  var infowindow = new google.maps.InfoWindow({
-    content: 'Change the zoom level',
-    position: myLatLng
-  });
-
-  infowindow.open(map);
-
   var marker = new google.maps.Marker({
     position: myLatLngng,
     map: map,
@@ -48,7 +41,18 @@ function initialize() {
     infowindow.setContent('Zoom: ' + zoomLevel);
   });
 
+google.maps.event.addListener(map, "idle", function() {
+        marker.setPosition(map.getCenter());
+        document.getElementById("latin").innerHTML = map.getCenter().lat().toFixed(6);
+        document.getElementById("lngin").innerHTML = map.getCenter().lat().toFixed(6);
+      });
+      google.maps.event.addListener(marker, "dragend", function(mapEvent) {
+        map.panTo(mapEvent.latLng);
+      });
+
+
 google.maps.event.addListener(marker, 'dragend', function(a) {
+  document.getElementById("map-output").innerHTML = "Latitude:  " + map.getCenter().lat().toFixed(6) + "<br>Longitude: " + map.getCenter().lng().toFixed(6) + "<a href='https://www.google.com/maps?q=" + encodeURIComponent(map.getCenter().toUrlValue()) + "' target='_blank'>Go to maps.google.com</a>";
   console.log(a);
   // bingo!
   // a.latLng contains the co-ordinates where the marker was dropped
@@ -107,9 +111,9 @@ if(!LoggedIn()) { ?>
     <!-- TODO: click on google map and have this auto-filled -->
 
   <label for="lat">Latitude</label>
-  <input name="lat" id="lat" type="number" step="0.000001" placeholder="Lat">
+  <input name="lat" id="latin" type="number" step="0.000001" placeholder="Lat">
   <label for="lng">Longitude</label>
-  <input name="lng" id="lng" type="number" step="0.000001" placeholder="Lng">
+  <input name="lng" id="lngin" type="number" step="0.000001" placeholder="Lng">
   <button type="submit" name="add">Register this sensor</button>
 </form>
     <div id="map">
