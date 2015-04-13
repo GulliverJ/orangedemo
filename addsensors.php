@@ -13,7 +13,7 @@
       height: 350px;
     }
   </style>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
   <script>
 
 function initialize() {
@@ -55,7 +55,7 @@ google.maps.event.addListener(marker, 'dragend', function(a) {
 });
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
+}
   </script>
 </head>
 
