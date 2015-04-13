@@ -18,6 +18,7 @@
 
 function initialize() {
   var myLatLng = new google.maps.LatLng(51.524636, -0.132036);
+
   var mapOptions = {
     zoom: 15,
     center: myLatLng,
@@ -59,7 +60,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 
-<body>
+<body onload="initialize()">
 
 <?php
 if(!LoggedIn()) { ?>
