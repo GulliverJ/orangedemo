@@ -12,7 +12,7 @@ th, td {
      padding-right: 5px;
 }
 </style>
-<title>Orange Sensors</title>
+<title>Portal</title>
 </head>
 
 <?php

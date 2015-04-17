@@ -111,6 +111,7 @@ if(LoggedIn()) {
 } else {
 ?>
   <!-- Any HTML code to be displayed for a user who isn't logged in goes here -->
+<h1> Notice: </h1>
 <h4>You must be logged in to add sensors. Click <a href="index.php">here</a> to log in.</h4>
 
 <?php

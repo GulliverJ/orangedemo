@@ -136,7 +136,7 @@
 	 else
 	 {
 		 // The login failed:
-	 	header("location:index.php");
+	 	header("location:sign_in.php");
 	 }
  }
  else if( isset( $_POST['logout'] ) && $_POST['logout'] == true )
