@@ -78,8 +78,16 @@
   <li>A list of their sensors, whether they're active or not</li>
   <li>A link to register new sensors</li>
 </ul>
-<a href="addsensors.php">Register New Sensors!</a><br>
-<a href="index.php">Home</a>
+<div class='row'>
+    <div class='col-md-6'>
+        <a href="addsensors.php" class = 'btn btn-block btn-success'>Register New Sensors!</a><br>
+    </div>
+    <div class='col-md-6'>
+        <a href="index.php" class = 'btn btn-block btn-default'>Home</a>
+    </div>
+</div>
+
+
 
 <?php
 
