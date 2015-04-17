@@ -42,7 +42,7 @@
                 if(LoggedIn()) { ?>
                    <a class="navbar-brand" href="#" style="color: #ffffff;">Logged in as <?php echo GetUserName(); ?>.</a>
                     <a href="logout.php"><p class="navbar-text" style="color: #8ed2ed">Log out</p></a>
-                }
+                <?php}
                 ?>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
             <span class="sr-only">Toggle navigation</span>
