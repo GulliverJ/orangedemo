@@ -38,7 +38,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">HOME</a></li>
             <li><a href="features.html">FEATURES</a></li>
-            <li><a href="index.php">SIGN IN</a></li>
+            <li><a href="sign_in.php">SIGN IN</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">CONTACT US</a></li>
           </ul>
