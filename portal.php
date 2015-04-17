@@ -34,11 +34,14 @@
 <nav class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
+                
+
         <div class="navbar-header">
+            
             <?php
                 if(LoggedIn()) { ?>
-                    <p class='navbar-title'>Logged in as <?php echo GetUserName(); ?>.</p>
-                    <a href="logout.php">Log out</a><?php
+                   <a class="navbar-brand" href="#" style="color: #ffffff;">Logged in as <?php echo GetUserName(); ?>.</a>
+                    <a href="logout.php"><p class="navbar-text" style="color: #8ed2ed">Log out</p></a>
                 }
                 ?>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
