@@ -40,7 +40,7 @@
             $sign = "SIGN IN";
             $signlink = "#";
                 if(LoggedIn()) { ?>
-                    <p class='navbar-brand'>Logged in as <?php echo GetUserName(); ?>.</p>
+                    <p class='navbar-text' style="color:#ffffff">Logged in as <?php echo GetUserName(); ?>.</p>
                     <!--<a href="logout.php"><p class='navbar-text'>Log out</p></a>-->
                     <?php
                         $sign = "SIGN OUT";
@@ -68,9 +68,8 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-
-
----
+<section class="content">
+    <div class="container">
 
 <h1>Portal, for registered users only</h1>
 
@@ -128,6 +127,10 @@ if(LoggedIn()) {
 <h3>You are not logged in. Click <a href="index.php">here</a> to log in.</h3>
 <?php
 }?>
+
+
+</div>
+</section>
 
 <!-- Bootstrap core JavaScript
     ================================================== -->
