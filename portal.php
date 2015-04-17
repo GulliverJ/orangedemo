@@ -73,22 +73,22 @@
 
 <h1>Portal, for registered users only</h1>
 
-<p>This page should display the following:</p>
+<p>This page displays the following:</p>
 <ul>
-  <li>A list of their sensors, whether they're active or not</li>
+  <li>The list of sensors I own</li>
   <li>A link to register new sensors</li>
 </ul>
 <div class='row'>
+    <div class='col-md-3'></div>
     <div class='col-md-6'>
         <a href="addsensors.php" class = 'btn btn-block btn-success'>Register New Sensors!</a><br>
     </div>
-    <div class='col-md-6'>
-        <a href="index.php" class = 'btn btn-block btn-default'>Home</a>
-    </div>
+    <div class='col-md-3'></div>
 </div>
 
 
-
+    <div class="row">
+        <div class="col-md-12">
 <?php
 
 if(LoggedIn()) {
@@ -136,6 +136,8 @@ if(LoggedIn()) {
 <?php
 }?>
 
+</div>
+</div>
 
 </div>
 </section>
