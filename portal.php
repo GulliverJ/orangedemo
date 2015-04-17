@@ -37,9 +37,14 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <?php
+            $sign = "SIGN IN";
+            $signlink = "#";
                 if(LoggedIn()) { ?>
-                    <p class='navbar-title'>Logged in as <?php echo GetUserName(); ?>.</p>
-                    <a href="logout.php">Log out</a><?php
+                    <p class='navbar-brand'>Logged in as <?php echo GetUserName(); ?>.</p>
+                    <!--<a href="logout.php"><p class='navbar-text'>Log out</p></a>-->
+                    <?php
+                        $sign = "SIGN OUT";
+                        $signlink = "logout.php";
                 }
                 ?>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
@@ -55,7 +60,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.php">HOME</a></li>
             <li><a href="features.html">FEATURES</a></li>
-            <li class="active"><a href="#">SIGN IN</a></li>
+            <li class="active"><a href="<?php echo $signlink ?>"><?php echo $sign ?></a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">CONTACT US</a></li>
           </ul>
