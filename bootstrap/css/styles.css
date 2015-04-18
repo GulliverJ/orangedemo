@@ -65,15 +65,14 @@ li.active a {
 .mainsearch {
 	max-width: 640px;
 	height: 50px;
-	background-image: url(images/50w.png);
+	background-image: url(images/75w.png);
 	background-color: transparent;
 	border-radius: 0;
 	margin-top: 64px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 96px;
-	border-color: #1b1b1b;
-
+	margin-bottom: 32px;
+	border-color: #999;
 }
 
 .mainbuttons {
