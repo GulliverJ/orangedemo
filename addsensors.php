@@ -125,9 +125,8 @@ if(LoggedIn()) {
       <div class='col-md-3'></div>
   </div>
 
-  <div class='row'>
-    <div class='col-md-3'></div>
-     <div class='col-md-6'>
+<div class='row'>
+  <div class='col-md-6'>
   <form name="addsensor" method="post" action="sensor_manager.php" id="addsensor" novalidate>
 
       <label for="application">Sensor Application</label>
@@ -176,13 +175,16 @@ if(LoggedIn()) {
     <label for="lng">Longitude</label>
     <input name="lng" id="lngin" class="form-control" type="number" step="0.000001" placeholder="Lng" value - "" style="width: 350px">
   </div>
-     <br> <button class="btn btn-primary btn-lg custom-width" type="submit" name="submit" style="width: 350px">Register this sensor</button>
+     <br> <button class="btn btn-primary btn-lg" type="submit" name="submit">Register this sensor</button>
         <br>
+  </div>
+  <div class="col-md-6">
         <div id="map">
       </div>
+  </div>
   </form>
-</div>
-<div class="col-md-3"></div>
+
+
 <?php
 } else {
 ?>

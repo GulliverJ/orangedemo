@@ -108,7 +108,7 @@ if(LoggedIn()) {
     $sql_select = "SELECT identifier FROM identifiers WHERE operator_id = {$opid};";
     $stmt = $conn->query($sql_select);
     $results = $stmt->fetchColumn(0);
-    echo "<h1>Your Unique Identifier: " . $results . "</h1><br>";
+    echo "<div class='jumbotron'><h2>Your Unique Identifier: " . $results . "</h2></div>";
     
     // Sensors table
     echo "<br><h2>My Sensors (rough, ugly version! Use source code for reference) </h2>";
@@ -132,7 +132,9 @@ if(LoggedIn()) {
         echo "<h3>Empty set</h3>";
     }
 } else { ?>
+<div class="jumbotron">
 <h3>You are not logged in. Click <a href="index.php">here</a> to log in.</h3>
+</div>
 <?php
 }?>
 
