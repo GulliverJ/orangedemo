@@ -43,6 +43,7 @@
     <div class="container">
          
       <div class="row">
+        <p>Orange Labs presents a new way to view the city, offering public access to hundreds of sensors providing real-time data.</p>
         <div class="col-md-3 col-md-push-3 center-block">
           <a href="register.php" class="btn btn-default btn-lg">Sign Up</a>
         </div>
