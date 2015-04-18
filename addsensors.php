@@ -108,13 +108,13 @@
           </div><!-- /.container-fluid -->
         </nav>
 
- <section class="content">
-        <div class="container">
-
+ 
 <?php
 if(LoggedIn()) {
 ?>
 <!-- Any HTML code to be displayed for a user who IS logged in goes here -->
+<section class="content">
+        <div class="container">
 
   <h1>Add New Sensors</h1><br>
   <div class='row'>
@@ -125,10 +125,9 @@ if(LoggedIn()) {
       <div class='col-md-3'></div>
   </div>
   <form name="addsensor" method="post" action="sensor_manager.php" id="addsensor" novalidate>
-    <div class="form-group">
+
       <label for="application">Sensor Application</label>
-      <input name="application" id="application" class="form-control" type="text" placeholder="Label your sensor"><br><br>
-    </div>
+      <input name="application" id="application" class="form-control" type="text" placeholder="Label your sensor" style="width: 350px"><br><br>
     <div class="form-group">
       <label for="measures">What does the sensor measure?</label>
          <select class="form-control" name="measures" id="measures" style="width: 350px">
@@ -165,15 +164,15 @@ if(LoggedIn()) {
     </select><br><br>
   </div>
     <p>Where exactly will your sensor be positioned</p>
-    <div class="form-group">
+  <div class="form group">
     <label for="lat">Latitude</label>
-    <input name="lat" id="latin" class="form-control" type="number" step="0.000001" placeholder="Lat" value = ""><br><br>
-  </div>
-    <div class="form-group">
+    <input name="lat" id="latin" class="form-control" type="number" step="0.000001" placeholder="Lat" value = "" style="width: 350px"><br><br>
+ 
     <label for="lng">Longitude</label>
-    <input name="lng" id="lngin" class="form-control" type="number" step="0.000001" placeholder="Lng" value - ""><br><br>
-      </div>
-     <br> <button class="btn btn-primary btn-lg custom-width" type="submit" name="submit">Register this sensor</button>
+    <input name="lng" id="lngin" class="form-control" type="number" step="0.000001" placeholder="Lng" value - "" style="width: 350px"><br><br>
+  </div>
+     <br> <button class="btn btn-primary btn-lg custom-width" type="submit" name="submit" style="width: 350px">Register this sensor</button>
+        <br>
         <div id="map">
       </div>
   </form>
@@ -182,9 +181,10 @@ if(LoggedIn()) {
 } else {
 ?>
   <!-- Any HTML code to be displayed for a user who isn't logged in goes here -->
-<h1> Notice: </h1>
-<h4>You must be logged in to add sensors. Click <a href="index.php">here</a> to log in.</h4>
-
+<div class="jumbotron">
+  <h1> Notice: </h1>
+  <h4>You must be logged in to add sensors. Click <a href="index.php">here</a> to log in.</h4>
+</div>
 <?php
 }
 ?>
