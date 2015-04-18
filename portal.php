@@ -70,7 +70,7 @@
 <section class="content">
     <div class="container">
 </ul>
-<h1> Management Portal </h1>
+<h1> Management Portal </h1><br>
 <div class='row'>
     <div class='col-md-3'></div>
     <div class='col-md-6'>

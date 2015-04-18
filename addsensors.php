@@ -142,7 +142,7 @@ if(LoggedIn()) {
             <option value="rainfall">Rainfall</option>
             <option value="temperature">Temperature</option>
             <option value="windspeed">Windspeed</option>
-          </select><br><br>
+          </select>
       </div>
     <!-- TODO: make this intelligent with JQuery (show distance units when "distance" is selected) -->
   <div class="form-group">
@@ -161,15 +161,16 @@ if(LoggedIn()) {
             <option value="C">Celcius</option>
             <option value="F">Fahrenheit</option>
             <option value="K">Kelvin</option>
-    </select><br><br>
+    </select>
   </div>
     <p>Where exactly will your sensor be positioned</p>
   <div class="form group">
     <label for="lat">Latitude</label>
-    <input name="lat" id="latin" class="form-control" type="number" step="0.000001" placeholder="Lat" value = "" style="width: 350px"><br><br>
- 
+    <input name="lat" id="latin" class="form-control" type="number" step="0.000001" placeholder="Lat" value = "" style="width: 350px">
+ </div>
+ <div class="form group">
     <label for="lng">Longitude</label>
-    <input name="lng" id="lngin" class="form-control" type="number" step="0.000001" placeholder="Lng" value - "" style="width: 350px"><br><br>
+    <input name="lng" id="lngin" class="form-control" type="number" step="0.000001" placeholder="Lng" value - "" style="width: 350px">
   </div>
      <br> <button class="btn btn-primary btn-lg custom-width" type="submit" name="submit" style="width: 350px">Register this sensor</button>
         <br>
