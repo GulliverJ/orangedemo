@@ -11,7 +11,6 @@ body.landing{
 }
 
 .landing .content img{
-	margin-bottom: 25px;
 }
 
 .navbar.navbar-default{
@@ -51,6 +50,7 @@ li.active a {
 }
 
 .btn.btn-default:hover {
+	background-image: none;
 	background-color: #1b1b1b !important;
 	 
 }
