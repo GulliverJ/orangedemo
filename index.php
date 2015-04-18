@@ -36,10 +36,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-menu">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">HOME</a></li>
-            <li><a href="features.html">FEATURES</a></li>
-            <li><a href="sign_in.php">SIGN IN</a></li>
-            <li><a href="#">ABOUT US</a></li>
+            <li class="active"><a href="#">home</a></li>
+            <li><a href="search.php">browse</a></li>
+            <li><a href="sign_in.php">sign in</a></li>
+            <li><a href="http://students.cs.ucl.ac.uk/2014/group10">about</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

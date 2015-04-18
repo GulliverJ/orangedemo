@@ -1,6 +1,8 @@
 body.landing{
-	background: url('images/backcoverEDIT2.png') no-repeat;
-	background-size: 100%;	
+	background: url('images/london_large_orange.png') no-repeat;
+	background-size: cover;	
+  background-position: 50%;
+  background-attachment: fixed;
 }
 
 .landing .content{
