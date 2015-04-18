@@ -40,9 +40,10 @@ li.active a {
 }
 
 .btn.btn-default {
-	background-color: none;
+	background-color: transparent;
 	background-image: url("images/50b.png");
-	border-radius: 0px;
+	border: none;
+	border-radius: 2px;
 	color: white;
 	margin: 5px;
 	width: 100%;
