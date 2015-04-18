@@ -20,7 +20,7 @@
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <img src="images/title.png" style="margin-left: auto; margin-right: auto;">
+          <img src="bootstrap/css/images/title.png" style="margin-left: auto; margin-right: auto;">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
