@@ -32,7 +32,7 @@
     
 
 
-<nav class="navbar navbar-default">
+    <nav class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -70,13 +70,6 @@
 
 <section class="content">
     <div class="container">
-
-<h1>Portal, for registered users only</h1>
-
-<p>This page displays the following:</p>
-<ul>
-  <li>The list of sensors I own</li>
-  <li>A link to register new sensors</li>
 </ul>
 <div class='row'>
     <div class='col-md-3'></div>
@@ -110,6 +103,13 @@ if(LoggedIn()) {
         die(var_dump($e));
     }
 
+    // Identifier
+    
+    $sql_select = "SELECT identifier FROM identifiers WHERE operator_id = {$opid};";
+    $stmt = $conn->query($sql_select);
+    $results = $stmt->fetchColumn();
+    echo "<h1>Your Unique Identifier: " + $results + "</h1><br>";
+    
     // Sensors table
     echo "<br><h2>My Sensors (rough, ugly version! Use source code for reference) </h2>";
     $sql_select = "SELECT sensor_id, global_id, application, measures, active FROM sensors WHERE operator_id = {$opid};";
