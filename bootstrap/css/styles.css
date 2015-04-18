@@ -58,24 +58,26 @@ li.active a {
 .search {
 	margin-top: 96px;
 	color: #1b1b1b;
-	text-align: cetner;
+	text-align: center;
 }
 
 .mainsearch {
 	max-width: 640px;
 	height: 50px;
-	background-image: url(images/90w.png);
+	background-image: url(images/75w.png);
 	background-color: transparent;
 	border-radius: 0;
 	margin-top: 64px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 32px;
-	border-color: #999;
+	border-color: #777;
+	text-align: center;
 }
 
 .mainbuttons {
 	height: 50px;
+	margin-bottom: 236px;
 }
 
 .btn-primary.raised:active, .btn-primary.raised.active {
@@ -137,7 +139,7 @@ h1{
   position: fixed;
   padding-right: 420px;
   padding-top: 130px;
-  background-color: rgba(27, 27, 27, 0.9);
+  background-color: rgba(27, 27, 27, 1);
   background-image: url(images/ucl_trans.png);
   background-position: calc(100vw - 420px) 80px;
   background-repeat: no-repeat;
