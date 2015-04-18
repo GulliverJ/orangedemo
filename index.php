@@ -41,9 +41,9 @@
     </nav>
 
     <div class="container search">
-      <h1 style="font-weight: lighter; color: #fff;">London's data at the touch of a button</h1>
+      <h1 style="font-weight: lighter; color: #f60;">London's data at the touch of a button</h1>
       <input type="text" class="form-control mainsearch" id="mainsearch" placeholder="Search for sensors"></input>
-      <button class="btn btn-default" style="height: 48px; max-width: 96px; margin-bottom: 100px;">Go</button>
+      <button class="btn btn-default" style="height: 48px; max-width: 200px; margin-bottom: 100px; margin-left: auto; margin-right: auto;">Search for sensors</button>
     </div>
     <div class="container content">
       <p style="max-width: 480px; margin-left: auto; margin-right: auto;">Orange Labs presents a new way to view the city, offering public access to hundreds of sensors providing real-time data.</p>
