@@ -78,16 +78,16 @@ li.active a{
 
 
 
-.jumbotron {
-	background-color: #28adb2;
+.jumbotron.custom{
+	background-color: #28adb2 !important;
 }
 
-.jumbotron h2 {
-	color: white;
+.jumbotron.custom h2 {
+	color: white !important;
 }
  
-.jumbotron p {
-	color:white;
+.jumbotron.custom p {
+	color:white !important;
 }
 
 h1{
