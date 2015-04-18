@@ -50,8 +50,7 @@ li.active a {
 }
 
 .btn.btn-default:hover {
-	background-image: none;
-	background-color: #1b1b1b !important;
+	color: #f60;
 	 
 }
 
@@ -119,6 +118,7 @@ h1{
   width: 100%;
   color: #eee;
   bottom: 0;
+  position: fixed;
   padding-right: 420px;
   padding-top: 130px;
   background-color: #1b1b1b;
