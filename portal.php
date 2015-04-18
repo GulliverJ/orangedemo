@@ -107,8 +107,8 @@ if(LoggedIn()) {
     
     $sql_select = "SELECT identifier FROM identifiers WHERE operator_id = {$opid};";
     $stmt = $conn->query($sql_select);
-    $results = $stmt->fetchColumn();
-    echo "<h1>Your Unique Identifier: " + $results + "</h1><br>";
+    $results = $stmt->fetchColumn(0);
+    echo "<h1>Your Unique Identifier: " . $results . "</h1><br>";
     
     // Sensors table
     echo "<br><h2>My Sensors (rough, ugly version! Use source code for reference) </h2>";
