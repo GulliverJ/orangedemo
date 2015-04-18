@@ -38,7 +38,7 @@ li.active a {
 
 .btn.btn-default {
 	background-color: transparent;
-	background-image: url("images/75b.png");
+	background-image: url("images/50b.png");
 	border: none;
 	border-radius: 2px;
 	color: white;
@@ -47,6 +47,7 @@ li.active a {
 
 .btn.btn-default:hover {
 	color: #f60;
+	background-image: url("images/75b.png");
 	 
 }
 
@@ -73,6 +74,7 @@ li.active a {
 	margin-bottom: 32px;
 	border-color: #777;
 	text-align: center;
+	font-size: 20px;
 }
 
 .mainbuttons {
@@ -136,7 +138,7 @@ h1{
   width: 100%;
   color: #eee;
   bottom: 0;
-  position: fixed;
+  position: static;
   padding-right: 420px;
   padding-top: 130px;
   background-color: rgba(27, 27, 27, 1);
