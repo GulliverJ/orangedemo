@@ -39,8 +39,7 @@
             <li><a href="index.php">HOME</a></li>
             <li><a href="features.html">FEATURES</a></li>
             <li><a href="sign_in.php">SIGN IN</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">ABOUT US</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
