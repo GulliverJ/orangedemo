@@ -1,17 +1,18 @@
 <?php
-        if(LoggedIn()) { ?>
+ require( 'user_manager.php' );
+        if(LoggedIn()) { 
         
         
           header("Location:/portal.php");
           exit;
 
 
-        <?php
+        
       } else {
         ?>
 
 <?php
- require( 'user_manager.php' );
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,13 +64,6 @@
     	<div class="container">
     		<?php
     		if(LoggedIn()) { ?>
-    		<h4>Logged in as <?php echo GetUserName(); ?>.</h4>
-    		
-        
-          header("Location:/portal.php");
-          exit;
-
-
         <?php
     	} else {
     		?>
