@@ -65,11 +65,13 @@ li.active a {
 .mainsearch {
 	max-width: 640px;
 	height: 50px;
-	background-image: url(images/25b.png);
+	background-image: url(images/50w.png);
 	background-color: transparent;
 	border-radius: 0;
+	margin-top: 64px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 96px;
 	border-color: #1b1b1b;
 
 }
@@ -85,8 +87,6 @@ li.active a {
     margin-top: 3px;
     text-align:center;
 }
-
-
 
 .jumbotron.custom{
 	background-color: #28adb2 !important;
