@@ -1,4 +1,16 @@
 <?php
+        if(LoggedIn()) { ?>
+        
+        
+          header("Location:/portal.php");
+          exit;
+
+
+        <?php
+      } else {
+        ?>
+
+<?php
  require( 'user_manager.php' );
 ?>
 <!DOCTYPE html>
@@ -52,8 +64,13 @@
     		<?php
     		if(LoggedIn()) { ?>
     		<h4>Logged in as <?php echo GetUserName(); ?>.</h4>
-    		<a href="logout.php">Log out</a> :C
-    		<a href="portal.php">Manage my sensors</a><?php
+    		
+        
+          header("Location:/portal.php");
+          exit;
+
+
+        <?php
     	} else {
     		?>
     	</div>
