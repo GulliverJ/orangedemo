@@ -36,10 +36,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-menu">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">home</a></li>
-            <li><a href="search.php">browse</a></li>
-            <li><a href="sign_in.php">sign in</a></li>
-            <li><a href="http://students.cs.ucl.ac.uk/2014/group10">about</a></li>
+            <li class="active"><a href="#">Browse</a></li>
+            <li><a href="sign_in.php">Sign in</a></li>
+            <li><a href="http://students.cs.ucl.ac.uk/2014/group10">About</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -50,10 +49,10 @@
          
           <div class="row">
             <div class="col-md-3 col-md-push-3 center-block">
-                <a href="register.php" class="btn btn-default btn-lg">Get started</a>
+                <a href="register.php" class="btn btn-default btn-lg">Sign Up</a>
             </div>
             <div class="col-md-3 col-md-push-3 center-block">
-               <a href="features.html#apis" class="btn btn-default btn-lg">Use APIs</a>
+               <a href="features.html#apis" class="btn btn-default btn-lg">Our APIs</a>
             </div>
           
           </div>
