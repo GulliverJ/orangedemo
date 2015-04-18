@@ -140,7 +140,7 @@ if(LoggedIn()) {
     <option value="" selected disabled>Choose a property</option>
     <span class="caret"></span>
   </button>
-  <select name="measures" id="measures">
+  <select name="measures" id="measures" style="width: 350px">
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
       <li role="presentation"><a role="menuitem" tabindex="-1">
         <option value="audio">Audio</option>
