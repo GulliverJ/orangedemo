@@ -8,23 +8,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
-    <title>Peel Demo</title>
+    <title>Orange Sensors</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="bootstrap/css/styles.css">
-
   </head>
 
   <body class="landing">
-
-    
     <nav class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
+          <img src="images/title.png" style="margin-left: auto; margin-right: auto;">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -52,7 +48,7 @@
                 <a href="register.php" class="btn btn-default btn-lg">Sign Up</a>
             </div>
             <div class="col-md-3 col-md-push-3 center-block">
-               <a href="features.html#apis" class="btn btn-default btn-lg">Our APIs</a>
+               <a href="features.html#apis" class="btn btn-default btn-lg">Data APIs</a>
             </div>
           
           </div>
