@@ -1,5 +1,5 @@
 body.landing{
-	background: url('images/london_large_orange.jpg') no-repeat;
+	background: url('images/london_large_orange_blur.jpg') no-repeat;
 	background-size: cover;	
   background-position: 50%;
   background-attachment: fixed;
@@ -38,7 +38,7 @@ li.active a {
 
 .btn.btn-default {
 	background-color: transparent;
-	background-image: url("images/75b.png");
+	background-image: url("images/75w.png");
 	border: none;
 	border-radius: 2px;
 	color: white;
