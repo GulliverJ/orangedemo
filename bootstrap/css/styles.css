@@ -38,17 +38,16 @@ li.active a {
 
 .btn.btn-default {
 	background-color: transparent;
-	background-image: url("images/50b.png");
+	background-image: url("images/75b.png");
 	border: none;
 	border-radius: 2px;
 	color: white;
+	margin: 6px;
 	width: 100%;
 }
 
 .btn.btn-default:hover {
 	color: #f60;
-	background-image: url("images/75b.png");
-	 
 }
 
 .btn.btn-primary.raised {
@@ -65,7 +64,7 @@ li.active a {
 .mainsearch {
 	max-width: 640px;
 	height: 50px;
-	background-image: url(images/75w.png);
+	background-image: url(images/90w.png);
 	background-color: transparent;
 	border-radius: 0;
 	margin-top: 64px;
@@ -138,7 +137,7 @@ h1{
   width: 100%;
   color: #eee;
   bottom: 0;
-  position: static;
+  position: absolute;
   padding-right: 420px;
   padding-top: 130px;
   background-color: rgba(27, 27, 27, 1);
