@@ -42,7 +42,7 @@ li.active a {
 
 .btn.btn-default {
 	background-color: transparent;
-	background-image: url("images/50b.png");
+	background-image: url("images/75b.png");
 	border: none;
 	border-radius: 2px;
 	color: white;
@@ -51,7 +51,7 @@ li.active a {
 }
 
 .btn.btn-default:hover {
-	background-image: url('images/75b.png') !important;
+	background-color: #1b1b1b !important;
 	 
 }
 
@@ -122,7 +122,7 @@ h1{
   padding-right: 420px;
   padding-top: 130px;
   background-color: #1b1b1b;
-  background-image: url(img/ucl_trans.png);
+  background-image: url(images/ucl_trans.png);
   background-position: calc(100vw - 420px) 80px;
   background-repeat: no-repeat;
   border-bottom-width: 20px;
