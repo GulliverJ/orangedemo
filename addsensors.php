@@ -124,6 +124,10 @@ if(LoggedIn()) {
       </div>
       <div class='col-md-3'></div>
   </div>
+
+  <div class='row'>
+    <div class='col-md-3'></div>
+     <div class='col-md-6'>
   <form name="addsensor" method="post" action="sensor_manager.php" id="addsensor" novalidate>
 
       <label for="application">Sensor Application</label>
@@ -177,7 +181,8 @@ if(LoggedIn()) {
         <div id="map">
       </div>
   </form>
-
+</div>
+<div class="col-md-3"></div>
 <?php
 } else {
 ?>
