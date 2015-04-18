@@ -56,6 +56,10 @@ li.active a {
     text-align: center;
 }
 
+.mainbuttons {
+	height: 50px;
+}
+
 .btn-primary.raised:active, .btn-primary.raised.active {
     background: #33a6cc;
     box-shadow: none;
@@ -87,7 +91,6 @@ h1{
 
 	.btn.btn-default{
 		width:  100%;
-		margin-top: 35%;
 	}
 
 	.custom-width {
