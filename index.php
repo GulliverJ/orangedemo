@@ -39,11 +39,14 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <h1>London's data at the touch of a button</h1>
-    <input type="text" placeholder="Search for sensors"></input>
-    <button>Go</button>
+
+    <div class="container mainsearch">
+      <h1 style="font-weight: lighter; color: #1b1b1b;">London's data at the touch of a button</h1>
+      <input type="text" class="form-control" id="mainsearch" placeholder="Search for sensors"></input>
+      <button>Go</button>
+    </div>
     <div class="container content">
-      <p>Orange Labs presents a new way to view the city, offering public access to hundreds of sensors providing real-time data.</p>
+      <p style="max-width: 480px">Orange Labs presents a new way to view the city, offering public access to hundreds of sensors providing real-time data.</p>
       <div class="row mainbuttons">
         <div class="col-md-3 col-md-push-3">
           <a href="register.php" class="btn btn-default btn-lg">Sign Up</a>
