@@ -1,18 +1,5 @@
 <?php
  require( 'user_manager.php' );
-        if(LoggedIn()) { 
-        
-        
-          header("Location:/portal.php");
-          exit;
-
-
-        
-      } else {
-        ?>
-
-<?php
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +42,7 @@
             <li><a href="index.php">HOME</a></li>
             <li><a href="features.html">FEATURES</a></li>
             <li class="active"><a href="#">SIGN IN</a></li>
-            <li><a href="#">ABOUT US</a></li>
+             <li><a href="#">ABOUT US</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -64,7 +51,9 @@
     	<div class="container">
     		<?php
     		if(LoggedIn()) { ?>
-        <?php
+    		<h4>Logged in as <?php echo GetUserName(); ?>.</h4>
+    		<a href="logout.php">Log out</a> :C
+    		<a href="portal.php">Manage my sensors</a><?php
     	} else {
     		?>
     	</div>
