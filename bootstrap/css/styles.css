@@ -5,12 +5,8 @@ body.landing{
   background-attachment: fixed;
 }
 
-.landing .content{
-	margin-top: 26%;
+.content{
 	text-align: center;
-}
-
-.landing .content img{
 }
 
 .navbar.navbar-default{
