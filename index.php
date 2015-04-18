@@ -39,7 +39,9 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
+    <h1>London's data at the touch of a button</h1>
+    <input type="text" placeholder="Search for sensors"></input>
+    <button>Go</button>
     <div class="container content">
       <p>Orange Labs presents a new way to view the city, offering public access to hundreds of sensors providing real-time data.</p>
       <div class="row mainbuttons">
