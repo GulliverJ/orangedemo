@@ -110,57 +110,116 @@
 
  <section class="content">
         <div class="container">
------------------------------------
 
 <?php
 if(LoggedIn()) {
 ?>
 <!-- Any HTML code to be displayed for a user who IS logged in goes here -->
-<a href="index.php">Home</a>
-<h1>Add new sensors</h1><br>
-<form name="addsensor" method="post" action="sensor_manager.php" id="addsensor" novalidate>
-  <label for="application">Sensor Application</label>
-  <input name="application" id="application" type="text" placeholder="Label your sensor"><br><br>
+
+  <h1>Add New Sensors</h1><br>
+  <div class='row'>
+      <div class='col-md-3'></div>
+      <div class='col-md-6'>
+          <a href="portal.php" class = 'btn btn-block btn-success'>Return to Management Portal</a><br>
+      </div>
+      <div class='col-md-3'></div>
+  </div>
+  <form name="addsensor" method="post" action="sensor_manager.php" id="addsensor" novalidate>
+    <label for="application">Sensor Application</label>
+    <input name="application" id="application" type="text" placeholder="Label your sensor"><br><br>
+
+
+
+--
+
+
+
+<div class="dropdown">
   <label for="measures">What does the sensor measure?</label>
-  <select name="measures" id="measures" style="width: 350px">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
     <option value="" selected disabled>Choose a property</option>
-    <option value="acceleration">Acceleration</option>
-    <option value="audio">Audio</option>
-    <option value="distance">Distance</option>
-    <option value="humidity">Humidity</option>
-    <option value="light">Light Intensity</option>
-    <option value="pressure">Pressure (all)</option>
-    <option value="radiation">Radiation</option>
-    <option value="rainfall">Rainfall</option>
-    <option value="temperature">Temperature</option>
-    <option value="windspeed">Windspeed</option>
-  </select><br><br>
-  <!-- TODO: make this intelligent with JQuery (show distance units when "distance" is selected) -->
-  <label for="unit">Which unit will the data have?</label>
-  <select name="unit" id="unit" style="width: 350px">
-    <option value="" selected disabled>Choose a unit</option>
-    <option value="none">none</option>
-    <option value="mm">Millimetres</option>
-    <option value="cm">Centimetres</option>
-    <option value="m">Metres</option>
-    <option value="mph">Miles per hour</option>
-    <option value="kmph">Kilometers per hour</option>
-    <option value="mps">Meters per second</option>
-    <option value="mps2">Meters per second squared</option>
-    <option value="dB">Decibels</option>
-    <option value="C">Celcius</option>
-    <option value="F">Fahrenheit</option>
-    <option value="K">Kelvin</option>
-  </select><br><br>
-  <p>Where exactly will your sensor be positioned</p>
-  <label for="lat">Latitude</label>
-  <input name="lat" id="latin" type="number" step="0.000001" placeholder="Lat" value = ""><br><br>
-  <label for="lng">Longitude</label>
-  <input name="lng" id="lngin" type="number" step="0.000001" placeholder="Lng" value - ""><br><br>
-  <button type="submit" name="add">Register this sensor</button><br>
-      <div id="map">
-    </div>
-</form>
+    <span class="caret"></span>
+  </button>
+  <select name="measures" id="measures">
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1">
+        <option value="audio">Audio</option>
+      </a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1">   
+        <option value="distance">Distance</option>
+      </a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1">
+        <option value="humidity">Humidity</option>
+      </a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1"> 
+        <option value="light">Light Intensity</option>
+      </a></li>
+
+      <li role="presentation"><a role="menuitem" tabindex="-1">
+         <option value="pressure">Pressure (all)</option>
+      </a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1">   
+        
+        <option value="radiation">Radiation</option>
+      </a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1">
+        
+        <option value="rainfall">Rainfall</option>
+      </a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1"> 
+         <option value="temperature">Temperature</option>
+      </a></li>
+
+      <li role="presentation"><a role="menuitem" tabindex="-1"> 
+          <option value="windspeed">Windspeed</option>
+      </a></li>
+    </select><br><br>
+  </ul>
+</div>
+
+
+
+
+
+
+--
+
+    
+    
+     
+     
+      
+   
+     
+     
+     
+   
+    <!-- TODO: make this intelligent with JQuery (show distance units when "distance" is selected) -->
+    <label for="unit">Which unit will the data have?</label>
+    <select name="unit" id="unit" style="width: 350px">
+      <option value="" selected disabled>Choose a unit</option>
+      <option value="none">none</option>
+      <option value="mm">Millimetres</option>
+      <option value="cm">Centimetres</option>
+      <option value="m">Metres</option>
+      <option value="mph">Miles per hour</option>
+      <option value="kmph">Kilometers per hour</option>
+      <option value="mps">Meters per second</option>
+      <option value="mps2">Meters per second squared</option>
+      <option value="dB">Decibels</option>
+      <option value="C">Celcius</option>
+      <option value="F">Fahrenheit</option>
+      <option value="K">Kelvin</option>
+    </select><br><br>
+    <p>Where exactly will your sensor be positioned</p>
+    <label for="lat">Latitude</label>
+    <input name="lat" id="latin" type="number" step="0.000001" placeholder="Lat" value = ""><br><br>
+    <label for="lng">Longitude</label>
+    <input name="lng" id="lngin" type="number" step="0.000001" placeholder="Lng" value - ""><br><br>
+    <button type="submit" name="add">Register this sensor</button><br>
+        <div id="map">
+      </div>
+  </form>
 
 <?php
 } else {
