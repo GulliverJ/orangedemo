@@ -112,3 +112,20 @@ h1{
 	height: 250px;
   	margin-top: -70px;
  }
+
+ .footer {
+  height: 200px;
+  width: 100%;
+  color: #eee;
+  bottom: 0;
+  padding-right: 420px;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  background-color: #1b1b1b;
+  background-image: url(../img/ucl_trans.png);
+  background-position: calc(100vw - 420px) 80px;
+  background-repeat: no-repeat;
+  border-bottom-width: 20px;
+  border-bottom-color: #fff;
+  border-bottom-style: solid;
+}
