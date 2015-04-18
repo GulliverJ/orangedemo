@@ -56,6 +56,20 @@ li.active a {
     text-align: center;
 }
 
+.search {
+	margin-top: 96px;
+	color: #1b1b1b;
+	text-align: cetner;
+}
+
+.mainsearch {
+	max-width: 640px;
+	height: 50px;
+	background-image: url(images/25b.png);
+	background-color: transparent;
+	border-radius: 0;
+}
+
 .mainbuttons {
 	height: 50px;
 }
