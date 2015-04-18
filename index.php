@@ -40,20 +40,18 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <section class="content">
-      <div class="container">
+    <div class="container">
          
-          <div class="row">
-            <div class="col-md-3 col-md-push-3 center-block">
-                <a href="register.php" class="btn btn-default btn-lg">Sign Up</a>
-            </div>
-            <div class="col-md-3 col-md-push-3 center-block">
-               <a href="features.html#apis" class="btn btn-default btn-lg">Data APIs</a>
-            </div>
+      <div class="row">
+        <div class="col-md-3 col-md-push-3 center-block">
+          <a href="register.php" class="btn btn-default btn-lg">Sign Up</a>
+        </div>
+        <div class="col-md-3 col-md-push-3 center-block">
+          <a href="features.html#apis" class="btn btn-default btn-lg">Data APIs</a>
+        </div>
           
-          </div>
-      </div>  
-    </section>  
+      </div>
+    </div>  
 
     <div class="container-fluid footer">
       <p style="float: right">This project is proudly presented in partnership with</p>
