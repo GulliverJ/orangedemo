@@ -51,7 +51,8 @@
     	<div class="container">
     		<?php
     		if(LoggedIn()) { ?>
-    		<h4>Logged in as <?php echo GetUserName(); ?>.</h4>
+    		<script> window.location.href="portal.php" </script>
+        <h4>Logged in as <?php echo GetUserName(); ?>.</h4>
     		<a href="logout.php">Log out</a> :C
     		<a href="portal.php">Manage my sensors</a><?php
     	} else {
