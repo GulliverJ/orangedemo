@@ -11,7 +11,7 @@ body.landing{
 	width: 100%;
 	color: #fff;
 	background-image: url(images/dk_bg_pattern.png);
-	background-color: rgba(27, 27, 27, 1);
+	background-color: rgba(27, 27, 27, 0.7);
 	min-height: 50%;
 	padding-bottom: 200px;
 	margin-bottom: -200px;
@@ -19,7 +19,7 @@ body.landing{
 
 .navbar.navbar-default{
 
-	background-color: rgba(27, 27, 27, 0.7);
+	background-color: rgba(27, 27, 27, 0.5);
 	border-radius: 0;
 	border: none !important;
 	margin-top: none !important;
