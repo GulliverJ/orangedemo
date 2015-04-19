@@ -36,17 +36,13 @@
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
+            
             <?php
-            $sign = "SIGN IN";
-            $signlink = "#";
                 if(LoggedIn()) { ?>
-                    <p class='navbar-text' style="color:#ffffff">Logged in as <?php echo GetUserName(); ?></p>
-                    <!--<a href="logout.php"><p class='navbar-text'>Log out</p></a>-->
-                    <?php
-                        $sign = "SIGN OUT";
-                        $signlink = "logout.php";
+                    <p class='navbar-text' style="color:#ffffff">Logged in as <?php echo GetUserName(); ?>.</p>
+                    <a href="logout.php"><p class='navbar-text'> Log out</p></a>
                 }
-                ?>
+            ?>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -58,10 +54,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-menu">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.php">HOME</a></li>
+            <li><a href="#">HOME</a></li>
             <li><a href="features.html">FEATURES</a></li>
-            <li class="active"><a href="<?php echo $signlink ?>"><?php echo $sign ?></a></li>
-            <li><a href="#">ABOUT US</a></li>
+            <li class="active"><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>PORTAL</a></li>
+            <li><a href="http://students.cs.ucl.ac.uk/2014/group10">ABOUT</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -87,7 +83,7 @@ if(LoggedIn()) { ?>
 
 <div class="row">
     <div class="col-md-12">
-        
+
 <?php 
 
     // User info will be loaded into session, including their name and operator ID.
