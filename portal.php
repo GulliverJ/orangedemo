@@ -40,7 +40,7 @@
             $sign = "SIGN IN";
             $signlink = "#";
                 if(LoggedIn()) { ?>
-                    <p class='navbar-text' style="color:#ffffff">Logged in as <?php echo GetUserName(); ?>.</p>
+                    <p class='navbar-text' style="color:#ffffff">Logged in as <?php echo GetUserName(); ?></p>
                     <!--<a href="logout.php"><p class='navbar-text'>Log out</p></a>-->
                     <?php
                         $sign = "SIGN OUT";
@@ -108,10 +108,10 @@ if(LoggedIn()) {
     $sql_select = "SELECT identifier FROM identifiers WHERE operator_id = {$opid};";
     $stmt = $conn->query($sql_select);
     $results = $stmt->fetchColumn(0);
-    echo "<div class='jumbotron'><h2>Your Unique Identifier: " . $results . "</h2></div>";
+    echo "<div class='jumbotron'><h3>Your Unique Identifier: " . $results . "</h3></div>";
     
     // Sensors table
-    echo "<br><h2>My Sensors (rough, ugly version! Use source code for reference) </h2>";
+    echo "<br><h2>My Sensors</h2>";
     $sql_select = "SELECT sensor_id, global_id, application, measures, active FROM sensors WHERE operator_id = {$opid};";
     $stmt = $conn->query($sql_select);
     $results = $stmt->fetchAll(); 
@@ -129,7 +129,7 @@ if(LoggedIn()) {
         }
         echo "</table>";
     } else {
-        echo "<h3>Empty set</h3>";
+        echo "<h4>No sensors to show</h4>";
     }
 } else { ?>
 <div class="jumbotron">
