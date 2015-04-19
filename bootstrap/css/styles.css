@@ -10,8 +10,8 @@ body.landing{
 	text-align: center;
 	width: 100%;
 	color: #fff;
-	background-image: url(images/dk_bg_pattern.png);
-	background-color: rgba(255, 255, 255, 0.7);
+	background-image: url(images/lt_bg_pattern.png);
+	background-color: rgba(27, 27, 27, 0.8);
 	min-height: 50%;
 	padding-bottom: 200px;
 	margin-bottom: -200px;
