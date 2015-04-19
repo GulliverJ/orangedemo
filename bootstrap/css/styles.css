@@ -6,10 +6,6 @@ body.landing{
   height: 100vh;
 }
 
-.topbar {
-	background-color: #1b1b1b;
-}
-
 .content{
 	text-align: center;
 	width: 100%;
@@ -23,7 +19,7 @@ body.landing{
 
 .navbar.navbar-default{
 
-	background-color: #1b1b1b;
+	background-color: rgba(27, 27, 27, 0.7);
 	border-radius: 0;
 	border: none !important;
 	margin-top: none !important;
