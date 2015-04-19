@@ -50,18 +50,18 @@
     <div class="content">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4" style="height: 100%">
             <h2 style="color: #f60">An open network</h2>
             <p>Sign up, initialise a sensor, then simply switch it on to start sharing data. It's that easy!</p>
             <a href="register.php" class="btn btn-default btn-lg">Sign Up</a>
           </div>
           <div class="col-md-4">
-            <h2>Public Data</h2>
+            <h2 style="color: #f60">Public Data</h2>
             <p>Access a wealth of public sensor data using one of our APIs. Run analytics and create new solutions for the population.</p>
             <a href="features.html#apis" class="btn btn-default btn-lg">Data APIs</a>
           </div>
           <div class="col-md-4">
-            <h2>Unlimited application</h2>
+            <h2 style="color: #f60">Unlimited application</h2>
             <p>Take a look at our smart parking app, built using data on the network. One of almost unlimited possibilities...</p>
             <a href="http://victokoh.cs.ucl.ac.uk/parking" class="btn btn-default btn-lg">Orange Parking</a>
           </div>

@@ -3,6 +3,7 @@ body.landing{
 	background-size: cover;	
   background-position: 50%;
   background-attachment: fixed;
+  height: 100vh;
 }
 
 .content{
