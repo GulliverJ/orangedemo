@@ -58,6 +58,7 @@ li.active a {
   border-radius: 6px;
   color: #fff;
   width: 100%;
+  margin-bottom: 8px;
 }
 
 .features-button:hover {
