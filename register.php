@@ -38,8 +38,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.php">HOME</a></li>
             <li><a href="features.html">FEATURES</a></li>
-            <li><a href="sign_in.php">SIGN IN</a></li>
-            <li><a href="#">ABOUT US</a></li>
+            <li><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>PORTAL</a></li>
+            <li><a href="http://students.cs.ucl.ac.uk/2014/group10">ABOUT</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -57,7 +57,7 @@
              </div>	
              <div class="form-group">	
                <label for="contact">Contact Name:</label>
-               <input name="contact_name" id="contact_name" class="form-control" type="text" placeholder="Choose a username" title="Enter your username">
+               <input name="contact_name" id="contact_name" class="form-control" type="text" placeholder="Enter a contact name" title="Enter your username">
              </div>	
              <div class="form-group">
                <label for="pass">Password:</label>

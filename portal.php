@@ -39,7 +39,7 @@
             
             <?php
                 if(LoggedIn()) { ?>
-                    <p class='navbar-text' style="color:#ffffff; width: 400px">Logged in as <?php echo GetUserName(); ?>.<a href="logout.php" class="navbar-text" style="float: none"> Log out</a></p>
+                    <p class='navbar-text' style="color:#ffffff; width: 400px">Logged in as <?php echo GetUserName(); ?>.<a href="logout.php" class="navbar-text" style="float: none">Log out</a></p>
                     <?php
                 }
             ?>
