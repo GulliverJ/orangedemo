@@ -45,6 +45,11 @@
 	 $sql_statement = $connection->prepare("GRANT SELECT ON orangesystem.sensors TO '" . $company . "'@'localhost';");
 	 $sql_statement->execute();*/
 
+	 $_SESSION['operator_id'] = (int)$operator_id;
+	 $_SESSION['username'] = $company;
+	 $_SESSION['last_activity'] = time();
+	 $_SESSION['created'] = time();
+
 	 header("location:portal.php");
 
  }

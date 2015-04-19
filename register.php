@@ -68,9 +68,6 @@
                <input name="email" id="email" class="form-control" type="email" placeholder="Enter your email address" title="Enter your email address">
               <br> <button class="btn btn-primary btn-lg custom-width" type="submit" name="submit">Submit</button>
              </form>
-             <p>After clicking the submit button, if everything's worked out alright, they should be redirected to the management portal page</p>
-             <a href="portal.php">Management Portal</a><br>
-             <a href="index.php">Home</a>
           </div>
         </div>
       </div>  
