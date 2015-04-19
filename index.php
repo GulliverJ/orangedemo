@@ -51,9 +51,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h2>An open network</h2>
+            <h2 style="color: #f60">An open network</h2>
             <p>Sign up, initialise a sensor, then simply switch it on to start sharing data. It's that easy!</p>
-            <a href="register.php" class="btn btn-default btn-lg">Register</a>
+            <a href="register.php" class="btn btn-default btn-lg">Sign Up</a>
           </div>
           <div class="col-md-4">
             <h2>Public Data</h2>
