@@ -1,3 +1,7 @@
+<?php
+  require('user_manager.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,7 +37,8 @@
         <div class="collapse navbar-collapse" id="main-menu">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Browse</a></li>
-            <li><a href="sign_in.php">Sign in</a></li>
+            <li><a href="api.html">APIs</a></li>
+            <li><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>Portal</a></li>
             <li><a href="http://students.cs.ucl.ac.uk/2014/group10">About</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
