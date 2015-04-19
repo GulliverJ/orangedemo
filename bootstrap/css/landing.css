@@ -36,6 +36,11 @@ body.landing{
 	background-color: white;
 }
 
+.navbar-text:hover {
+  text-decoration: none;
+  color: #f60;
+}
+
 
 li.active a {
 	color: white !important;
