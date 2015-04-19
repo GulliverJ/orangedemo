@@ -50,15 +50,16 @@
     <div class="content">
       <div class="container">
         <div class="row">
-          <div class="col-md-6" style="padding-left: 64px; padding-right: 64px;">
+          <div class="col-md-5" style="padding-left: 64px; padding-right: 64px; background-color: #1b1b1b">
             <h2 style="color: #f60">An open network</h2>
             <p style="min-height: 72px;">Sign up, initialise a sensor, then simply switch it on to start sharing data. It's that easy!</p>
-            <a href="register.php" class="btn btn-default btn-lg">Sign Up</a>
+            <a href="register.php" class="btn btn-default btn-lg features-button">Sign Up</a>
           </div>
-          <div class="col-md-6" style="padding-left: 64px; padding-right: 64px;">
+          <div class="col-md-2"></div>
+          <div class="col-md-5" style="padding-left: 64px; padding-right: 64px; background-color: #1b1b1b">
             <h2 style="color: #f60">Public Data</h2>
             <p style="min-height: 72px;">Access a wealth of public sensor data using one of our APIs. Run analytics and create new solutions for the population.</p>
-            <a href="features.html#apis" class="btn btn-default btn-lg">Data APIs</a>
+            <a href="features.html#apis" class="btn btn-default btn-lg features-button">Data APIs</a>
           </div>
           
         </div>
