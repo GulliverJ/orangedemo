@@ -20,8 +20,8 @@
   </head>
 
   <body class="landing">
-    <nav class="navbar navbar-fixed-top navbar-default" style="padding-left: none; padding-right: none;">
-      <div class="container">
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container" style="padding-left: none; padding-right: none;">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <img src="bootstrap/css/images/title.png">
