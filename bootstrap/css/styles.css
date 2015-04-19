@@ -19,7 +19,7 @@ body.landing{
 
 .navbar.navbar-default{
 
-	background-color: rgba(27, 27, 27, 0.5);
+	background-color: rgba(27, 27, 27, 1);
 	border-radius: 0;
 	border: none !important;
 	margin-top: none !important;
