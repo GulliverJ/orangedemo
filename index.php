@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Peel Demo</title>
+    <title>Orange Sensors</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,8 +38,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">HOME</a></li>
             <li><a href="features.html">FEATURES</a></li>
-            <li><a href=<?php if(LoggedIn()) { ?>"portal.php"<?php } else { ?>"sign_in.php"<?php } ?>>PORTAL</a></li>
-            <li><a href="#">ABOUT US</a></li>
+            <li><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>PORTAL</a></li>
+            <li><a href="http://students.cs.ucl.ac.uk/2014/group10">ABOUT</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
