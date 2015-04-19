@@ -1,3 +1,6 @@
+<?php
+ require( 'user_manager.php' );
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
