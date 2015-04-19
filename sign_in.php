@@ -40,7 +40,6 @@
         <div class="collapse navbar-collapse" id="main-menu">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.php">HOME</a></li>
-            <li><a href="#">HOME</a></li>
             <li><a href="features.html">FEATURES</a></li>
             <li class="active"><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>PORTAL</a></li>
             <li><a href="http://students.cs.ucl.ac.uk/2014/group10">ABOUT</a></li>

@@ -39,7 +39,7 @@
             
             <?php
                 if(LoggedIn()) { ?>
-                    <p class='navbar-text' style="color:#ffffff">Logged in as <?php echo GetUserName(); ?>.<a href="logout.php" class="navbar-text"> Log out</a></p>
+                    <p class='navbar-text' style="color:#ffffff; width: 400px">Logged in as <?php echo GetUserName(); ?>.<a href="logout.php" class="navbar-text" style="float: none"> Log out</a></p>
                     <?php
                 }
             ?>
@@ -54,7 +54,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-menu">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">HOME</a></li>
+            <li><a href="index.php">HOME</a></li>
             <li><a href="features.html">FEATURES</a></li>
             <li class="active"><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>PORTAL</a></li>
             <li><a href="http://students.cs.ucl.ac.uk/2014/group10">ABOUT</a></li>
