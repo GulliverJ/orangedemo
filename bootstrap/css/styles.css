@@ -7,6 +7,7 @@ body.landing{
 
 .content{
 	text-align: center;
+	width: 100%;
 	color: #fff;
 	height: 400px;
 	background-image: url(images/dk_bg_pattern.png);

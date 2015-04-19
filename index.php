@@ -46,21 +46,22 @@
       <button class="btn btn-default btn-lg" style="height: 48px; max-width: 200px; margin-bottom: 100px;">Go</button>
       <p style="max-width: 480px; margin-left: auto; margin-right: auto;">Orange Labs presents a new way to view the city, offering public access to hundreds of sensors providing real-time data.</p>
     </div>
-
-    <div class="container content">
-      <div class="row">
-        <div class="col-md-4">
-          <a href="register.php" class="btn btn-default btn-lg">Register</a>
-        </div>
-        <div class="col-md-4">
-          <a href="features.html#apis" class="btn btn-default btn-lg">Data APIs</a>
-        </div>
-        <div class="col-md-4">
-          <a href="http://victokoh.cs.ucl.ac.uk/parking" class="btn btn-default btn-lg">Orange Parking</a>
-        </div>
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="register.php" class="btn btn-default btn-lg">Register</a>
+          </div>
+          <div class="col-md-4">
+            <a href="features.html#apis" class="btn btn-default btn-lg">Data APIs</a>
+          </div>
+          <div class="col-md-4">
+            <a href="http://victokoh.cs.ucl.ac.uk/parking" class="btn btn-default btn-lg">Orange Parking</a>
+          </div>
           
-      </div>
-    </div>  
+        </div>
+      </div> 
+    </div> 
 
     <div class="container-fluid footer">
       <p style="float: right">This project is proudly presented in partnership with</p>
