@@ -71,6 +71,11 @@
     <div class="container">
 </ul>
 <h1> Management Portal </h1><br>
+
+<?php
+
+if(LoggedIn()) { ?>
+
 <div class='row'>
     <div class='col-md-3'></div>
     <div class='col-md-6'>
@@ -80,11 +85,10 @@
 </div>
 
 
-    <div class="row">
-        <div class="col-md-12">
-<?php
-
-if(LoggedIn()) {
+<div class="row">
+    <div class="col-md-12">
+        
+<?php 
 
     // User info will be loaded into session, including their name and operator ID.
     $opid = $_SESSION['operator_id'];
