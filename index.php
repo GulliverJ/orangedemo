@@ -20,7 +20,7 @@
   </head>
 
   <body class="landing">
-    <nav class="navbar navbar-fixed-top navbar-default">
+    <nav class="navbar navbar-fixed-top navbar-default" style="padding-left: none; padding-right: none;">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
