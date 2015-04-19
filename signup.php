@@ -1,4 +1,5 @@
 <?php
+ session_start();
 
  $server_name = "localhost";
  $db_name = "orangesystem";
