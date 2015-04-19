@@ -38,16 +38,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">HOME</a></li>
             <li><a href="features.html">FEATURES</a></li>
-            <li><a href=<?php
-
-            if(LoggedIn()) { ?>
-              "portal.php" <?php
-            } else { ?>
-              "sign_in.php" <?php
-            }
-            ?>
-
-            PORTAL</a></li>
+            <li><a href=<?php if(LoggedIn()) { ?>"portal.php"<?php } else { ?>"sign_in.php"<?php } ?>>PORTAL</a></li>
             <li><a href="#">ABOUT US</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
