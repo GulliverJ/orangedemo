@@ -56,11 +56,13 @@ li.active a {
 .features-button {
   border-color: #f60;
   border-radius: 6px;
-  color: #f60;
+  color: #fff;
 }
 
 .features-button:hover {
   background-color: #000;
+  border-color: #f60;
+  color: #f60;
 }
 
 .btn.btn-default:hover {
