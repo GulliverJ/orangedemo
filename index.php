@@ -44,7 +44,7 @@
       <h1 style="font-weight: lighter; color: #1b1b1b;">Real-time readings from across the city</h1>
       <input type="text" class="form-control mainsearch" id="mainsearch" placeholder="Search for sensors"></input>
       <button class="btn btn-default btn-lg" style="height: 48px; max-width: 200px; margin-bottom: 70px;">Go</button>
-      <p style="max-width: 480px; margin-left: auto; margin-right: auto; padding-bottom: 16px">Orange Labs presents a new way to view the city, offering public access to hundreds of sensors providing real-time data.</p>
+      <p style="max-width: 480px; margin-left: auto; margin-right: auto; padding-bottom: 8px">Orange Labs presents a new way to view the city, offering public access to hundreds of sensors providing real-time data.</p>
       <a href="http://students.cs.ucl.ac.uk/2014/group10" style="color: #fca">Find out more</a>
     </div>
     <div class="content">
@@ -59,7 +59,7 @@
           <div class="col-md-5" style="padding-left: 64px; padding-right: 64px; background-color: #1b1b1b">
             <h2 style="color: #f60; margin-top: 8px;">Public Data</h2>
             <p style="min-height: 72px; margin-top: 32px">Access a wealth of public sensor data using one of our APIs. Run analytics and integrate the data with your applications.</p>
-            <a href="features.html#apis" class="btn btn-lg features-button">Data APIs</a>
+            <a href="apis.html" class="btn btn-lg features-button">Data APIs</a>
           </div>
           
         </div>
