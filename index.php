@@ -1,5 +1,5 @@
 <?php
-  require(user_manager.php);
+  require('user_manager.php');
 ?>
 
 <!DOCTYPE html>
