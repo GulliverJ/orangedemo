@@ -39,11 +39,11 @@
             
             <?php
                 if(LoggedIn()) { ?>
-                    <p class='navbar-text' style="color:#ffffff; width: 400px">Logged in as <?php echo GetUserName(); ?>.<a href="logout.php" class="navbar-text" style="float: none">Log out</a></p>
+                    <p class='navbar-text' style="color:#ffffff; display: inline; float: left">Logged in as <?php echo GetUserName(); ?>.<a href="logout.php" class="navbar-text" style="padding-left: 8px">Log out</a></p>
                     <?php
                 }
             ?>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+          <button type="button" class="navbar-toggle collapsed" style="float: right" data-toggle="collapse" data-target="#main-menu">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
