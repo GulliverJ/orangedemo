@@ -12,6 +12,9 @@ body.landing{
 	color: #fff;
 	background-image: url(images/dk_bg_pattern.png);
 	background-color: rgba(27, 27, 27, 0.7);
+	min-height: 50%;
+	padding-bottom: 200px;
+	margin-bottom: -200px;
 }
 
 .navbar.navbar-default{
@@ -60,9 +63,10 @@ li.active a {
 }
 
 .search {
-	margin-top: 64px;
+	padding-top: 64px;
 	color: #fff;
 	text-align: center;
+	min-height: 50%;
 }
 
 .mainsearch {

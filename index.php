@@ -16,7 +16,7 @@
   </head>
 
   <body class="landing">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -69,11 +69,11 @@
         </div>
       </div> 
     </div> 
-    <!--
+    
     <div class="container-fluid footer">
       <p style="float: right">This project is proudly presented in partnership with</p>
     </div>
-    -->
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
