@@ -12,34 +12,28 @@ body.landing{
 }
 
 .navbar.navbar-default{
-
-	background: url('images/blacktile.png') ;
+	background-color: rgba(27, 27, 27, 1);
 	border-radius: 0;
 	border: none !important;
 	margin-top: none !important;
-
 }
+
 
 .navbar-default .navbar-nav>li>a {
 
 	color: white !important;
-
-
+	background-color: #1b1b1b;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-
 	color: black !important;
 	background-color: white;
-
-
 }
 
 
 li.active a{
 	color: white !important;
-	background-color: orange !important;
-
+	background-color: #f60 !important;
 }
 
 /*li.active a{
@@ -58,9 +52,7 @@ li.active a{
 }
 
 .btn.btn-default:hover {
-	background: url('images/orangetile.png') !important;
-	background-size: 100%;
-	 
+	color: #f60;
 }
 
 .btn.btn-primary.raised {
@@ -75,8 +67,6 @@ li.active a{
     margin-top: 3px;
     text-align:center;
 }
-
-
 
 .jumbotron.custom{
 	background-color: #28adb2 !important;
@@ -119,5 +109,5 @@ h1{
 	background-image: 100%;
 	background-position: center top;
 	height: 250px;
-  	margin-top: -70px;
+  margin-top: -70px;
  }
