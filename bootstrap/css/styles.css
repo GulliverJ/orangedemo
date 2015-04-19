@@ -6,6 +6,10 @@ body.landing{
   height: 100vh;
 }
 
+.topbar {
+	background-color: #1b1b1b;
+}
+
 .content{
 	text-align: center;
 	width: 100%;
