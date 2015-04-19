@@ -40,14 +40,14 @@
             <li><a href="features.html">FEATURES</a></li>
             <li><a href=<?php
 
-            if(LoggedIn()) {
-              echo "'portal.php'";
-            } else {
-              echo "'sign_in.php'";
+            if(LoggedIn()) { ?>
+              "portal.php" <?php
+            } else { ?>
+              "sign_in.php" <?php
             }
             ?>
 
-            >PORTAL</a></li>
+            PORTAL</a></li>
             <li><a href="#">ABOUT US</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
