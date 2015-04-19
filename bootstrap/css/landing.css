@@ -76,6 +76,7 @@ li.active a {
 	color: #fff;
 	text-align: center;
 	min-height: 65%;
+  padding-bottom: 20px;
 }
 
 .mainsearch {
