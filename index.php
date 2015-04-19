@@ -45,17 +45,24 @@
       <input type="text" class="form-control mainsearch" id="mainsearch" placeholder="Search for sensors"></input>
       <button class="btn btn-default btn-lg" style="height: 48px; max-width: 200px; margin-bottom: 100px;">Go</button>
       <p style="max-width: 480px; margin-left: auto; margin-right: auto;">Orange Labs presents a new way to view the city, offering public access to hundreds of sensors providing real-time data.</p>
+      <a href="http://students.cs.ucl.ac.uk/2014/group10">Find out more</a>
     </div>
     <div class="content">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
+            <h2 style="color: #eee">Build the network</h2>
+            <p>Sign up, initialise a sensor, then simply switch it on to start sharing data. It's that easy!</p>
             <a href="register.php" class="btn btn-default btn-lg">Register</a>
           </div>
           <div class="col-md-4">
+            <h2 style="color: #eee">Public Data</h2>
+            <p>Access a wealth of public sensor data using one of our APIs. Run analytics and create new solutions for the population.</p>
             <a href="features.html#apis" class="btn btn-default btn-lg">Data APIs</a>
           </div>
           <div class="col-md-4">
+            <h2 style="color: #eee">Unlimited application</h2>
+            <p>Take a look at our smart parking app, built using data on the network. One of almost unlimited possibilities...</p>
             <a href="http://victokoh.cs.ucl.ac.uk/parking" class="btn btn-default btn-lg">Orange Parking</a>
           </div>
           
