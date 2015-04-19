@@ -44,15 +44,19 @@
       <h1 style="font-weight: lighter; color: #1b1b1b;">Real-time readings from thousands of sensors</h1>
       <input type="text" class="form-control mainsearch" id="mainsearch" placeholder="Search for sensors"></input>
       <button class="btn btn-default btn-lg" style="height: 48px; max-width: 200px; margin-bottom: 100px;">Go</button>
-    </div>
-    <div class="container content">
       <p style="max-width: 480px; margin-left: auto; margin-right: auto;">Orange Labs presents a new way to view the city, offering public access to hundreds of sensors providing real-time data.</p>
-      <div class="row mainbuttons">
-        <div class="col-md-3 col-md-push-3">
-          <a href="register.php" class="btn btn-default btn-lg">Sign Up</a>
+    </div>
+
+    <div class="container content">
+      <div class="row">
+        <div class="col-md-4">
+          <a href="register.php" class="btn btn-default btn-lg">Register</a>
         </div>
-        <div class="col-md-3 col-md-push-3">
+        <div class="col-md-4">
           <a href="features.html#apis" class="btn btn-default btn-lg">Data APIs</a>
+        </div>
+        <div class="col-md-4">
+          <a href="http://victokoh.cs.ucl.ac.uk/parking" class="btn btn-default btn-lg">Orange Parking</a>
         </div>
           
       </div>
