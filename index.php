@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/landing.css">
   </head>
 
   <body class="landing">
