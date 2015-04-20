@@ -39,8 +39,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-menu">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.php">BROWSE</a></li>
-            <li class="active"><a href="#">APIs</a></li>
+            <li class="active"><a href="">BROWSE</a></li>
+            <li><a href="api.php">APIs</a></li>
             <li><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>PORTAL</a></li>
             <li><a href="http://students.cs.ucl.ac.uk/2014/group10">ABOUT</a></li>
           </ul>
@@ -74,18 +74,24 @@
 
     // Sensors table
     echo "<br><h2>Results</h2>";
-    $sql_select = "SELECT global_id, application, measures FROM sensors WHERE application LIKE '{$searchTerm}' OR measures LIKE '{$searchTerm}' OR unit LIKE '{$searchTerm}'";
+    $sql_select = "SELECT global_id, application, measures, unit, lat, lng FROM sensors WHERE application LIKE '{$searchTerm}' OR measures LIKE '{$searchTerm}' OR unit LIKE '{$searchTerm}'";
     $stmt = $conn->query($sql_select);
     $results = $stmt->fetchAll(); 
     if(count($results) > 0) {
         echo "<table class='table'>";
         echo "<tr><th>Global ID</th>";
         echo "<th>Application Label</th>";
-        echo "<th>Measures</th></tr>";
+        echo "<th>Measures</th>";
+        echo "<th>Unit</th>";
+        echo "<th>Latitude</th>";
+        echo "<th>Longitude</th></tr>";
         foreach($results as $row) {
             echo "<tr><td>".$row['global_id']."</td>";
             echo "<td>".$row['application']."</td>";
-            echo "<td>".$row['measures']."</td></tr>";
+            echo "<td>".$row['measures']."</td>";
+            echo "<td>".$row['unit']."</td>";
+            echo "<td>".$row['lat']."</td>";
+            echo "<td>".$row['lng']."</td></tr>";
         }
         echo "</table>";
     } else {
