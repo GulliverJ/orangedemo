@@ -56,7 +56,7 @@
 
         <?php 
 
-        $searchTerm = isset( $_GET['search'] ) ? ?_GET['search'] : 0;
+        $searchTerm = isset( $_GET['search'] ) ? $_GET['search'] : 0;
 
     // Connection info
     $host = "localhost";
