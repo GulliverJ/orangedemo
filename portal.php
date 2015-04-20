@@ -142,5 +142,10 @@ if(LoggedIn()) { ?>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+    $.getJSON('http://orange-peel.herokuapp.com/sensors/find/11' + id, function(data) {
+        console.log(data);
+    });
+    </script>
 </body>
 </html>
