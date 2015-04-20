@@ -17,8 +17,8 @@ section {
 }
 
 .content-small {
-	padding-top: 82px;
-	padding-bottom: 48px;
+	margin-top: 82px;
+	padding: 48px;
 	background-color: #fff;
 	border-radius: 20px;
 }
