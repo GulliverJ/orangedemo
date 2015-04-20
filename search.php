@@ -91,7 +91,7 @@
     } else {
         echo "<h4>No results - try another search</h4>";
     }
-} else { ?>
+     ?>
 
 
       </div>  
