@@ -129,7 +129,7 @@ if(LoggedIn()) { ?>
             echo "<td>".$row['global_id']."</td>";
             echo "<td>".$row['application']."</td>";
             echo "<td>".$row['measures']."</td></tr>";
-            echo "<td class='reading'></td></tr>";
+            echo "<td class='reading{$row['global_id']}'></td></tr>";
         }
         echo "</table>";
     } else {
@@ -154,7 +154,11 @@ if(LoggedIn()) { ?>
 
      <script>
     $.getJSON('http://orange-peel.herokuapp.com/sensors/find/range/<?php echo $min . '/' . $max; ?>', function(data) {
-        console.log(data);
+        $.each(data, function(i, value) {
+            if ($('.reading' + value.global_id)) {
+                $('.reading' + value.global_id).html(value.reading);
+            }
+        });
     });
     </script>
 
