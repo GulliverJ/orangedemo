@@ -69,42 +69,38 @@
 
   </script>
 
-  <title>Add Sensors</title>
+  <title>Orange Parking</title>
 
 </head>
 <body onload="initialize()">
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-fixed-top navbar-default">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <?php
-                $sign = "SIGN IN";
-                $signlink = "#";
-                    if(LoggedIn()) { ?>
-                        <p class='navbar-text' style="color:#ffffff">Logged in as <?php echo GetUserName(); ?>.</p>
-                        <!--<a href="logout.php"><p class='navbar-text'>Log out</p></a>-->
-                        <?php
-                            $sign = "SIGN OUT";
-                            $signlink = "logout.php";
-                    }
-                    ?>
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
+        <div class="navbar-header">
+            
+            <?php
+                if(LoggedIn()) { ?>
+                    <p class='navbar-text' style="color:#ffffff; display: inline; float: left">Logged in as <?php echo GetUserName(); ?>.<a href="logout.php" class="navbar-text" style="padding-left: 8px; float: none">Log out</a></p>
+                    <?php
+                }
+            ?>
+          <button type="button" class="navbar-toggle collapsed" style="float: right" data-toggle="collapse" data-target="#main-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="main-menu">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="features.html">FEATURES</a></li>
-                <li class="active"><a href="<?php echo $signlink ?>"><?php echo $sign ?></a></li>
-                <li><a href="#">ABOUT US</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.php">BROWSE</a></li>
+            <li><a href="api.php">APIs</a></li>
+            <li><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>PORTAL</a></li>
+            <li><a href="#">ABOUT</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
 
@@ -113,8 +109,8 @@
 if(LoggedIn()) {
 ?>
 <!-- Any HTML code to be displayed for a user who IS logged in goes here -->
-<section class="content">
-        <div class="container">
+<section>
+        <div class="container content-small">
 
   <h1>Add New Sensors</h1><br>
   <div class='row'>
@@ -176,7 +172,7 @@ if(LoggedIn()) {
     <label for="lng">Longitude</label>
     <input name="lng" id="lngin" class="form-control" type="number" step="0.000001" placeholder="Lng" value - "" style="width: 350px">
   </div>
-     <br> <br><button class="btn btn-primary btn-lg" type="submit" name="submit">Register this sensor</button>
+     <br> <br><button class="btn btn-primary btn-lg sub-button" type="submit" name="submit">Register this sensor</button>
         <br>
   </div>
   <div class="col-md-6">
@@ -192,7 +188,7 @@ if(LoggedIn()) {
   <!-- Any HTML code to be displayed for a user who isn't logged in goes here -->
 <div class="jumbotron">
   <h1> Notice: </h1>
-  <h4>You must be logged in to add sensors. Click <a href="index.php">here</a> to log in.</h4>
+  <h4>You must be logged in to add sensors. Click <a href="sign_in.php">here</a> to log in.</h4>
 </div>
 <?php
 }
