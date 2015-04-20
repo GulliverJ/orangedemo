@@ -56,7 +56,7 @@
 
         <?php 
 
-        $searchTerm = isset( $_GET['search'] ) ? $_GET['search'] : 0;
+        $searchTerm = isset( $_GET['search'] ) ? $_GET['search'] : "nothing";
 
     // Connection info
     $host = "localhost";
@@ -73,19 +73,17 @@
     }
 
     // Sensors table
-    echo "<br><h2>Sensors</h2>";
-    $sql_select = "SELECT sensor_id, global_id, application, measures FROM sensors WHERE application LIKE '{$searchTerm}' OR measures LIKE '{$searchTerm}' OR unit LIKE '{$searchTerm}'";
+    echo "<br><h2>Results</h2>";
+    $sql_select = "SELECT global_id, application, measures FROM sensors WHERE application LIKE '{$searchTerm}' OR measures LIKE '{$searchTerm}' OR unit LIKE '{$searchTerm}'";
     $stmt = $conn->query($sql_select);
     $results = $stmt->fetchAll(); 
     if(count($results) > 0) {
         echo "<table class='table'>";
-        echo "<tr><th>Sensor ID</th>";
-        echo "<th>Global ID</th>";
+        echo "<tr><th>Global ID</th>";
         echo "<th>Application Label</th>";
         echo "<th>Measures</th></tr>";
         foreach($results as $row) {
-            echo "<tr><td>".$row['sensor_id']."</td>";
-            echo "<td>".$row['global_id']."</td>";
+            echo "<tr><td>".$row['global_id']."</td>";
             echo "<td>".$row['application']."</td>";
             echo "<td>".$row['measures']."</td></tr>";
         }
