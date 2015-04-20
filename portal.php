@@ -30,8 +30,6 @@
 </head>
 <body>
     
-
-
     <nav class="navbar navbar-fixed-top navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -64,7 +62,7 @@
     </nav>
 
 <section class="content">
-    <div class="container">
+    <div class="container" style="height: 100%">
 </ul>
 <h1> Management Portal </h1><br>
 
@@ -79,10 +77,6 @@ if(LoggedIn()) { ?>
     </div>
     <div class='col-md-3'></div>
 </div>
-
-
-<div class="row">
-    <div class="col-md-12">
 
 <?php 
 
@@ -137,9 +131,6 @@ if(LoggedIn()) { ?>
 </div>
 <?php
 }?>
-
-</div>
-</div>
 
 </div>
 </section>

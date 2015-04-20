@@ -58,7 +58,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5" style="padding-left: 64px; padding-right: 64px; background-color: #1b1b1b">
-            <h2 style="color: #f60; margin-top: 8px">An Open Network</h2>
+            <h2 style="color: #f60; margin-top: 8px">Open Network</h2>
             <p style="min-height: 72px; margin-top: 32px">Sign up, initialise a sensor, then simply switch it on to start sharing data. It's that easy!</p>
             <a href="register.php" class="btn btn-lg features-button">Sign Up</a>
           </div>

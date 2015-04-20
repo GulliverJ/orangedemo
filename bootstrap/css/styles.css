@@ -1,11 +1,14 @@
-body.landing{
-	background: url('images/backcoverEDIT2.png') no-repeat;
-	background-size: 100%;	
+body{
+	background: url('images/london_large_orange_blur.jpg') no-repeat;
+	background-size: cover;	
+  background-position: 50%;
+  background-attachment: fixed;
 }
 
 .content{
 	margin-top: 50px;
 	text-align: center;
+	min-height: 100vh;
 }
 .content img{
 	margin-bottom: 25px;
