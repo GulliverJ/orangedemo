@@ -48,6 +48,16 @@ section {
 	margin-right: auto;
 }
 
+.sub-button:hover {
+	background-color: #fca;
+}
+
+.sub-button {
+	background-color: #f60;
+	color: #fff;
+	max-width: 100px;
+}
+
 li.active a{
 	color: white !important;
 	background-color: #f60 !important;

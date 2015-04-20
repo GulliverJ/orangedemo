@@ -66,7 +66,7 @@
           <div class="col-md-5" style="padding-left: 64px; padding-right: 64px; background-color: #1b1b1b">
             <h2 style="color: #f60; margin-top: 8px;">Public Data</h2>
             <p style="min-height: 72px; margin-top: 32px">Access a wealth of public sensor data using one of our APIs. Run analytics and integrate the data with your applications.</p>
-            <a href="apis.html" class="btn btn-lg features-button">Data APIs</a>
+            <a href="api.php" class="btn btn-lg features-button">Data APIs</a>
           </div>
           
         </div>

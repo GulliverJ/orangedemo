@@ -50,7 +50,7 @@
     </nav>
 
     <section>
-      <div class="container content-small">
+      <div class="container content-small" style="padding-top: 20px">
           <h1>Register</h1>
             <form name="signup" method="post" action="signup.php" id="signup-form" novalidate>
               <div class="form-group">  
@@ -68,7 +68,7 @@
              <div class="form-group">
                <label for="email">Email Address:</label>
                <input name="email" id="email" class="form-control custom-input" type="email" placeholder="Enter your email address" title="Enter your email address">
-              <br> <button class="btn btn-primary btn-lg custom-width" type="submit" name="submit">Submit</button>
+              <br> <button class="btn btn-primary btn-lg sub-button" type="submit" name="submit">Submit</button>
             </div>
           </form>
       </div>  
