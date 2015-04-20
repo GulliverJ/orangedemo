@@ -143,7 +143,7 @@ if(LoggedIn()) { ?>
 
 
      <script>
-    $.getJSON('http://orange-peel.herokuapp.com/sensors/find/11' + id, function(data) {
+    $.getJSON('http://orange-peel.herokuapp.com/sensors/find/11', function(data) {
         console.log(data);
     });
     </script>
