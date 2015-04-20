@@ -61,8 +61,8 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-<section class="content">
-    <div class="container" style="height: 100%; background-color: #fff">
+<section>
+    <div class="container content">
 </ul>
 <h1> Management Portal </h1><br>
 
