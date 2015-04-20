@@ -127,10 +127,10 @@ if(LoggedIn()) {
   <form name="addsensor" method="post" action="sensor_manager.php" id="addsensor" novalidate>
 
       <label for="application">Sensor Application</label>
-      <input name="application" id="application" class="form-control" type="text" placeholder="Label your sensor" style="width: 350px"><br><br>
+      <input name="application" id="application" class="form-control custom-input" type="text" placeholder="Label your sensor" style="width: 350px"><br><br>
     <div class="form-group">
       <label for="measures">What does the sensor measure?</label>
-         <select class="form-control" name="measures" id="measures" style="width: 350px">
+         <select class="form-control custom-input" name="measures" id="measures" style="width: 350px">
             <option value="" selected disabled>Choose a property</option>
             <option value="acceleration">Acceleration</option>
             <option value="audio">Audio</option>
@@ -147,7 +147,7 @@ if(LoggedIn()) {
     <!-- TODO: make this intelligent with JQuery (show distance units when "distance" is selected) -->
   <div class="form-group">
     <label for="unit">Which unit will the data have?</label>
-          <select class="form-control" name="unit" id="unit" style="width: 350px">
+          <select class="form-control custom-input" name="unit" id="unit" style="width: 350px">
             <option value="" selected disabled>Choose a unit</option>
             <option value="none">none</option>
             <option value="mm">Millimetres</option>
@@ -166,11 +166,11 @@ if(LoggedIn()) {
     <p>Where exactly will your sensor be positioned</p>
   <div class="form group">
     <label for="lat">Latitude</label>
-    <input name="lat" id="latin" class="form-control" type="number" step="0.000001" placeholder="Lat" value = "" style="width: 350px">
+    <input name="lat" id="latin" class="form-control custom-input" type="number" step="0.000001" placeholder="Lat" value = "" style="width: 350px">
  </div>
  <div class="form group">
     <label for="lng">Longitude</label>
-    <input name="lng" id="lngin" class="form-control" type="number" step="0.000001" placeholder="Lng" value - "" style="width: 350px">
+    <input name="lng" id="lngin" class="form-control custom-input" type="number" step="0.000001" placeholder="Lng" value - "" style="width: 350px">
   </div>
      <br> <br><button class="btn btn-primary btn-lg sub-button" type="submit" name="submit">Register this sensor</button>
         <br>
