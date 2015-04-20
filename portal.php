@@ -117,7 +117,8 @@ if(LoggedIn()) { ?>
         echo "<th>Global ID</th>";
         echo "<th>Application Label</th>";
         echo "<th>Measures</th>";
-        echo "<th>Reading</th></tr>";
+        echo "<th>Reading</th>";
+        echo "<th>Timestamp</th></tr>";
         foreach($results as $row) {
             if ($row['global_id'] > $max) {
                 $max = $row['global_id'];
@@ -129,7 +130,8 @@ if(LoggedIn()) { ?>
             echo "<td>".$row['global_id']."</td>";
             echo "<td>".$row['application']."</td>";
             echo "<td>".$row['measures']."</td>";
-            echo "<td class='reading{$row['global_id']}'></td></tr>";
+            echo "<td class='reading{$row['global_id']}'></td>";
+            echo "<td class='timestamp{$row['global_id']}'></td></tr>";
         }
         echo "</table>";
     } else {
@@ -153,13 +155,16 @@ if(LoggedIn()) { ?>
 
 
      <script>
-    $.getJSON('http://orange-peel.herokuapp.com/sensors/find/range/<?php echo $min . '/' . $max; ?>', function(data) {
-        $.each(data, function(i, value) {
-            if ($('.reading' + value.global_id)) {
-                $('.reading' + value.global_id).html(value.reading);
-            }
+     setInterval(function () {
+        $.getJSON('http://orange-peel.herokuapp.com/sensors/find/range/<?php echo $min . '/' . $max; ?>', function(data) {
+            $.each(data, function(i, value) {
+                if ($('.reading' + value.global_id)) {
+                    $('.reading' + value.global_id).html(value.reading);
+                    $('.timestamp' + value.global_id).html(value.timestamp);
+                }
+            });
         });
-    });
+     }, 10000);
     </script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
