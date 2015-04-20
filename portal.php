@@ -109,17 +109,27 @@ if(LoggedIn()) { ?>
     $sql_select = "SELECT sensor_id, global_id, application, measures, active FROM sensors WHERE operator_id = {$opid};";
     $stmt = $conn->query($sql_select);
     $results = $stmt->fetchAll(); 
+    $max = 0;
+    $min = 100000000;
     if(count($results) > 0) {
         echo "<table class='table'>";
         echo "<tr><th>Sensor ID</th>";
         echo "<th>Global ID</th>";
         echo "<th>Application Label</th>";
         echo "<th>Measures</th></tr>";
+        echo "<th>Reading</th></tr>";
         foreach($results as $row) {
+            if ($row['global_id'] > $max) {
+                $max = $row['global_id'];
+            }
+            if ($row['global_id'] < $min) {
+                $min = $row['global_id'];
+            }
             echo "<tr><td>".$row['sensor_id']."</td>";
             echo "<td>".$row['global_id']."</td>";
             echo "<td>".$row['application']."</td>";
             echo "<td>".$row['measures']."</td></tr>";
+            echo "<td class='reading'></td></tr>";
         }
         echo "</table>";
     } else {
@@ -143,7 +153,7 @@ if(LoggedIn()) { ?>
 
 
      <script>
-    $.getJSON('http://orange-peel.herokuapp.com/sensors/find/11', function(data) {
+    $.getJSON('http://orange-peel.herokuapp.com/sensors/find/range/<?php echo $min . '/' . $max; ?>', function(data) {
         console.log(data);
     });
     </script>
