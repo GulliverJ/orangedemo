@@ -155,7 +155,7 @@ if(LoggedIn()) { ?>
 
 
      <script>
-     setInterval(function () {
+     function loadReadings() {
         $.getJSON('http://orange-peel.herokuapp.com/sensors/find/range/<?php echo $min . '/' . $max; ?>', function(data) {
             $.each(data, function(i, value) {
                 if ($('.reading' + value.global_id)) {
@@ -164,7 +164,9 @@ if(LoggedIn()) { ?>
                 }
             });
         });
-     }, 10000);
+    };
+    loadReadings();
+    setInterval(loadReadings, 10000);
     </script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
