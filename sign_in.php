@@ -65,11 +65,11 @@
 				<form name="login" method="post" action="user_manager.php" id="login" novalidate>
 					<div class="form-group">
 						<label for="username">Username or Company Name:</label>
-						<input class="custom-input" name="username" id="username" class="form-control" type="text" placeholder="Username" title="Enter your username">
+						<input name="username" id="username" class="form-control custom-input" type="text" placeholder="Username" title="Enter your username">
 					</div>
 					<div class="form-group">
 						<label for="password">Password Name:</label>
-						<input class="custom-input" name="password" id="password" class="form-control" type="password" placeholder="Password" title="Enter your password">
+						<input name="password" id="password" class="form-control custom-input" type="password" placeholder="Password" title="Enter your password">
 					</div>
 					<button class="btn btn-primary btn-lg custom-width" type="submit" name="login">Log in</button>
 				</form>
