@@ -22,12 +22,11 @@
   </head>
 
   <body>
-
-    
     <nav class="navbar navbar-fixed-top navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
+          <img src="bootstrap/css/images/title.png">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -47,39 +46,39 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <section>
-    	<div class="container content-small">
-    		<?php
-    		if(LoggedIn()) { ?>
-    		<script> window.location.href="portal.php" </script>
-        <h4>Already logged in as <?php echo GetUserName(); ?>.</h4>
-        <a href="portal.php">Click here to be taken to the management portal</a>
-        <a href="logout.php">Click here to log out.</a><?php
-    	} else {
-    		?>
-    	</div>
-    </section>
+
+
 
     <section>
       <div class="container content-small">
+      <?php
+        if(LoggedIn()) { ?>
+        <script> window.location.href="portal.php" </script>
+        <h4>Already logged in as <?php echo GetUserName(); ?>.</h4>
+        <a href="portal.php">Click here to be taken to the management portal</a>
+        <a href="logout.php">Click here to log out.</a>
+        <?php
+        } else {
+        ?>
 				<a href="register.php">Haven't registered yet? Click here to Sign up!</a>
 				<h3>Log in!</h3>
 				<form name="login" method="post" action="user_manager.php" id="login" novalidate>
 					<div class="form-group">
 						<label for="username">Username or Company Name:</label>
-						<input name="username" id="username" class="form-control" type="text" placeholder="Username" title="Enter your username">
+						<input name="username" id="username" class="form-control" type="text" placeholder="Username" title="Enter your username" style="width: 480px">
 					</div>
 					<div class="form-group">
 						<label for="password">Password Name:</label>
-						<input name="password" id="password" class="form-control" type="password" placeholder="Password" title="Enter your password">
+						<input name="password" id="password" class="form-control" type="password" placeholder="Password" title="Enter your password" style="width: 480px">
 					</div>
 					<button class="btn btn-primary btn-lg custom-width" type="submit" name="login">Log in</button>
 				</form>
+        <?php
+        }
+        ?>
       </div>  
     </section>  
-	<?php
-	}
-	?>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
