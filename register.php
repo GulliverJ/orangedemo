@@ -49,8 +49,8 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <section class="content">
-      <div class="container">
+    <section>
+      <div class="container content">
           <h1>Register</h1>
             <form name="signup" method="post" action="signup.php" id="signup-form" novalidate>
               <div class="form-group">  

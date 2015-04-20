@@ -48,8 +48,8 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <section class="content">
-      <div class="container">
+    <section>
+      <div class="container content">
           <h1>APIs</h1>
           <div class="row">
             <div class="col-md-6">

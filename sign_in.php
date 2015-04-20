@@ -12,7 +12,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Index</title>
+    <title>Orange Sensors</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
   <body>
 
     
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-fixed-top navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -52,20 +52,17 @@
     		<?php
     		if(LoggedIn()) { ?>
     		<script> window.location.href="portal.php" </script>
-        <h4>Logged in as <?php echo GetUserName(); ?>.</h4>
-    		<a href="logout.php">Log out</a> :C
-    		<a href="portal.php">Manage my sensors</a><?php
+        <h4>Already logged in as <?php echo GetUserName(); ?>.</h4>
+        <a href="portal.php">Click here to be taken to the management portal</a>
+        <a href="logout.php">Click here to log out.</a><?php
     	} else {
     		?>
     	</div>
     </section>
 
-    <section class="content">
-      <div class="container">
-         
-          <div class="row">
-            <div class="col-md-12"> 
-				<a href="register.php">Click here to Sign up!</a>
+    <section>
+      <div class="container content">
+				<a href="register.php">Haven't registered yet? Click here to Sign up!</a>
 				<h3>Log in!</h3>
 				<form name="login" method="post" action="user_manager.php" id="login" novalidate>
 					<div class="form-group">
@@ -78,8 +75,6 @@
 					</div>
 					<button class="btn btn-primary btn-lg custom-width" type="submit" name="login">Log in</button>
 				</form>
-            </div>  
-          </div>
       </div>  
     </section>  
 	<?php
