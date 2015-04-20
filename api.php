@@ -49,16 +49,16 @@
     </nav>
 
     <section>
-      <div class="container content-small">
-          <h1>APIs</h1>
+      <div class="container content-small" style="padding-top: 20px">
+          <h1>Orange Sensors APIs</h1>
           <div class="row">
             <div class="col-md-6">
               <h2>Java API</h2>
               <p style="text-align: left">
                 The Java API contains a wealth of methods for accessing public data from our database. It's as simple as adding the jarfile to your classpath and instantiating the API.</p>
               <a class="btn btn-primary btn-lg sub-button" href="https://github.com/GulliverJ/OrangeSensorsJavaAPI">Download from Github</a>
-              <p style="text-align: left">
-                All documentation for the API, along with manuals and sample code, can be found <a href="">here</a></p>
+              <p style="text-align: left"><br>
+                All documentation for the API, along with manuals and sample code, can be found <a href="">here.</a></p>
             </div>
             <div class="col-md-6">
               <h2>Node.js API</h2>
