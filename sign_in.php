@@ -39,16 +39,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-menu">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="features.html">FEATURES</a></li>
-            <li class="active"><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>PORTAL</a></li>
+            <li><a href="index.php">BROWSE</a></li>
+            <li><a href="#">APIs</a></li>
+            <li><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>PORTAL</a></li>
             <li><a href="http://students.cs.ucl.ac.uk/2014/group10">ABOUT</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <section class="content">
-    	<div class="container">
+    <section>
+    	<div class="container content-small">
     		<?php
     		if(LoggedIn()) { ?>
     		<script> window.location.href="portal.php" </script>
@@ -61,7 +61,7 @@
     </section>
 
     <section>
-      <div class="container content">
+      <div class="container content-small">
 				<a href="register.php">Haven't registered yet? Click here to Sign up!</a>
 				<h3>Log in!</h3>
 				<form name="login" method="post" action="user_manager.php" id="login" novalidate>

@@ -49,7 +49,7 @@
     </nav>
 
     <section>
-      <div class="container content">
+      <div class="container">
           <h1>APIs</h1>
           <div class="row">
             <div class="col-md-6">

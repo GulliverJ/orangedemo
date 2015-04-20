@@ -16,6 +16,13 @@ section {
 	background-color: #fff;
 }
 
+.content-small {
+	padding-top: 82px;
+	padding-bottom: 48px;
+	background-color: #fff;
+	border-radius: 20px;
+}
+
 .navbar.navbar-default{
 	background-color: rgba(27, 27, 27, 1);
 	border-radius: 0;
