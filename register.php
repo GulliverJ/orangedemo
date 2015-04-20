@@ -50,24 +50,24 @@
     </nav>
 
     <section>
-      <div class="container content">
+      <div class="container content-small">
           <h1>Register</h1>
             <form name="signup" method="post" action="signup.php" id="signup-form" novalidate>
               <div class="form-group">  
                <label for="username">Username (e.g. Company name):</label>
-               <input name="company_name" id="company_name" class="form-control" type="text" placeholder="Choose a username" title="Enter your username">
+               <input name="company_name" id="company_name" class="form-control custom-input" type="text" placeholder="Choose a username" title="Enter your username">
             </div> 
              <div class="form-group"> 
                <label for="contact">Contact Name:</label>
-               <input name="contact_name" id="contact_name" class="form-control" type="text" placeholder="Enter a contact name" title="Enter your username">
+               <input name="contact_name" id="contact_name" class="form-control custom-input" type="text" placeholder="Enter a contact name" title="Enter your username">
              </div> 
              <div class="form-group">
                <label for="pass">Password:</label>
-               <input name="password" id="password" class="form-control" type="password" placeholder="Choose a password" title="Enter your password">
+               <input name="password" id="password" class="form-control custom-input" type="password" placeholder="Choose a password" title="Enter your password">
              </div> 
              <div class="form-group">
                <label for="email">Email Address:</label>
-               <input name="email" id="email" class="form-control" type="email" placeholder="Enter your email address" title="Enter your email address">
+               <input name="email" id="email" class="form-control custom-input" type="email" placeholder="Enter your email address" title="Enter your email address">
               <br> <button class="btn btn-primary btn-lg custom-width" type="submit" name="submit">Submit</button>
             </div>
           </form>
