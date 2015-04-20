@@ -163,7 +163,7 @@ if(LoggedIn()) {
             <option value="K">Kelvin</option>
     </select>
   </div>
-    <p>Where exactly will your sensor be positioned</p>
+    <p>Where exactly will your sensor be positioned?</p>
   <div class="form group">
     <label for="lat">Latitude</label>
     <input name="lat" id="latin" class="form-control custom-input" type="number" step="0.000001" placeholder="Lat" value = "" style="width: 350px">

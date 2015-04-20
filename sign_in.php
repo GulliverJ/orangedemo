@@ -60,7 +60,6 @@
         <?php
         } else {
         ?>
-				<a href="register.php">Haven't registered yet? Click here to Sign up!</a>
 				<h3>Log in!</h3>
 				<form name="login" method="post" action="user_manager.php" id="login" novalidate>
 					<div class="form-group">
@@ -73,6 +72,7 @@
 					</div>
 					<button class="btn btn-primary btn-lg custom-width" type="submit" name="login">Log in</button>
 				</form>
+        <a href="register.php">Haven't registered yet? Click here to Sign up!</a>
         <?php
         }
         ?>
