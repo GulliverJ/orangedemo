@@ -12,7 +12,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Register</title>
+    <title>Orange Sensors</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,14 +24,15 @@
   <body>
 
     
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-fixed-top navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
+          <img src="bootstrap/css/images/title.png">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
             <span class="icon-bar"></span>
           </button>
         </div>
@@ -50,31 +51,28 @@
 
     <section class="content">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Register</h1>
+          <h1>Register</h1>
             <form name="signup" method="post" action="signup.php" id="signup-form" novalidate>
-              <div class="form-group">	
+              <div class="form-group">  
                <label for="username">Username (e.g. Company name):</label>
                <input name="company_name" id="company_name" class="form-control" type="text" placeholder="Choose a username" title="Enter your username">
-             </div>	
-             <div class="form-group">	
+            </div> 
+             <div class="form-group"> 
                <label for="contact">Contact Name:</label>
                <input name="contact_name" id="contact_name" class="form-control" type="text" placeholder="Enter a contact name" title="Enter your username">
-             </div>	
+             </div> 
              <div class="form-group">
                <label for="pass">Password:</label>
                <input name="password" id="password" class="form-control" type="password" placeholder="Choose a password" title="Enter your password">
-             </div>	
+             </div> 
              <div class="form-group">
                <label for="email">Email Address:</label>
                <input name="email" id="email" class="form-control" type="email" placeholder="Enter your email address" title="Enter your email address">
               <br> <button class="btn btn-primary btn-lg custom-width" type="submit" name="submit">Submit</button>
-             </form>
-          </div>
-        </div>
+            </div>
+          </form>
       </div>  
-    </section>  
+    </section> 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

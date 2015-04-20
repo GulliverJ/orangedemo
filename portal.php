@@ -26,7 +26,7 @@
          padding-right: 5px;
     }
     </style>
-    <title>Portal</title>
+    <title>Orange Sensors</title>
 </head>
 <body>
     
