@@ -47,8 +47,10 @@
 
     <div class="container search">
       <h1 style="font-weight: lighter; color: #1b1b1b;">Real-time readings from across the city</h1>
-      <input type="text" class="form-control mainsearch" id="mainsearch" placeholder="Search for sensors"></input>
-      <button class="btn btn-default btn-lg" style="height: 48px; max-width: 200px; margin-bottom: 70px;">Go</button>
+      <form method="get" action="search.php">
+      <input type="text" class="form-control mainsearch" id="search" name="search" placeholder="Search for sensors"></input>
+      <button type="submit" class="btn btn-default btn-lg" style="height: 48px; max-width: 200px; margin-bottom: 70px;">Go</button>
+    </form>
       <p style="max-width: 480px; margin-left: auto; margin-right: auto; padding-bottom: 8px; margin-top: 72px">Orange Labs presents a new way to view the city, offering public access to hundreds of sensors providing real-time data.</p>
       <a href="http://students.cs.ucl.ac.uk/2014/group10" style="color: #fca">Find out more</a>
     </div>
