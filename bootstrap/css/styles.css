@@ -139,3 +139,7 @@ h1{
 	height: 250px;
   margin-top: -70px;
  }
+
+.problem {
+	color: red;
+}

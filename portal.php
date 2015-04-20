@@ -164,6 +164,16 @@ if(LoggedIn()) { ?>
                 }
             });
         });
+        for (var i = <?php echo $min; ?>; i < <?php echo $max; ?>; ++i) {
+            if ($('.timestamp' + i)) {
+                var ts = $('.timestamp' + i).html();
+                if (new Date().getTime() - new Date(ts).getTime() > 24*60*60*1000) {
+                    $('.timestamp' + i).addClass('problem');
+                } else {
+                    $('.timestamp' + i).removeClass('problem');
+                }
+            }
+        }
     };
     loadReadings();
     setInterval(loadReadings, 10000);
