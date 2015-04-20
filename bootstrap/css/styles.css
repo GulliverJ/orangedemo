@@ -42,6 +42,11 @@ section {
 	background-color: white;
 }
 
+.custom-input {
+	max-width: 512px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 li.active a{
 	color: white !important;
