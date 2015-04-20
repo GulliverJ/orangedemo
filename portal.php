@@ -116,7 +116,7 @@ if(LoggedIn()) { ?>
         echo "<tr><th>Sensor ID</th>";
         echo "<th>Global ID</th>";
         echo "<th>Application Label</th>";
-        echo "<th>Measures</th></tr>";
+        echo "<th>Measures</th>";
         echo "<th>Reading</th></tr>";
         foreach($results as $row) {
             if ($row['global_id'] > $max) {
@@ -128,7 +128,7 @@ if(LoggedIn()) { ?>
             echo "<tr><td>".$row['sensor_id']."</td>";
             echo "<td>".$row['global_id']."</td>";
             echo "<td>".$row['application']."</td>";
-            echo "<td>".$row['measures']."</td></tr>";
+            echo "<td>".$row['measures']."</td>";
             echo "<td class='reading{$row['global_id']}'></td></tr>";
         }
         echo "</table>";
