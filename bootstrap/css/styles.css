@@ -3,11 +3,11 @@ body.landing{
 	background-size: 100%;	
 }
 
-.landing .content{
-	margin-top: 26%;
+.content{
+	margin-top: 50px;
 	text-align: center;
 }
-.landing .content img{
+.content img{
 	margin-bottom: 25px;
 }
 
