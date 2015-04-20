@@ -62,7 +62,7 @@
     </nav>
 
 <section class="content">
-    <div class="container" style="height: 100%">
+    <div class="container" style="height: 100%; background-color: #fff">
 </ul>
 <h1> Management Portal </h1><br>
 

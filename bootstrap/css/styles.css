@@ -6,12 +6,9 @@ body{
 }
 
 .content{
-	margin-top: 50px;
+	padding-top: 50%;
 	text-align: center;
-	min-height: 100vh;
-}
-.content img{
-	margin-bottom: 25px;
+	min-height: 100%;
 }
 
 .navbar.navbar-default{
