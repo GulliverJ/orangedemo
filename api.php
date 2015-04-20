@@ -42,14 +42,14 @@
             <li><a href="index.php">BROWSE</a></li>
             <li class="active"><a href="#">APIs</a></li>
             <li><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>PORTAL</a></li>
-            <li><a href="http://students.cs.ucl.ac.uk/2014/group10">ABOUT</a></li>
+            <li><a href="#">ABOUT</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
     <section>
-      <div class="container">
+      <div class="container content-small">
           <h1>APIs</h1>
           <div class="row">
             <div class="col-md-6">
