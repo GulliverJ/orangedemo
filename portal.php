@@ -168,7 +168,7 @@ if(LoggedIn()) { ?>
             if ($('.timestamp' + i)) {
                 var ts = $('.timestamp' + i).html();
                 if (new Date().getTime() - new Date(ts).getTime() > 24*60*60*1000) {
-                    $('.timestamp' + i).addClass('problem');
+                    $('.timestamp' + i).addClass('problem'); 
                 } else {
                     $('.timestamp' + i).removeClass('problem');
                 }
@@ -178,6 +178,12 @@ if(LoggedIn()) { ?>
     loadReadings();
     setInterval(loadReadings, 10000);
     </script>
+
+    <style>
+    .problem {
+        color: red;
+    }
+    </style>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
