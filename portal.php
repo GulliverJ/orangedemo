@@ -165,7 +165,7 @@ if(LoggedIn()) { ?>
                 if ($('.reading' + value.global_id)) {
                     $('.reading' + value.global_id).html(value.reading);
                     $('.timestamp' + value.global_id).html(value.timestamp);
-                    if (new Date().getTime() - new Date(value.timestamp).getTime() > 24*60*60*1000) {
+                    if (new Date().getTime() - new Date(value.timestamp).getTime() > 3*24*60*60*1000) {
                         $('.timestamp' + value.global_id).addClass('problem'); 
                     } else {
                         $('.timestamp' + value.global_id).removeClass('problem');
