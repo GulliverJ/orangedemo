@@ -161,6 +161,7 @@ if(LoggedIn()) { ?>
      <script>
      function loadReadings() {
         $.getJSON('http://orange-peel.herokuapp.com/sensors/find/range/<?php echo $min . '/' . $max; ?>', function(data) {
+            alert('here' + value.timestamp);
             $.each(data, function(i, value) {
                 if ($('.reading' + value.global_id)) {
                     $('.reading' + value.global_id).html(value.reading);
