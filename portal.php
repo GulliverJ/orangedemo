@@ -18,13 +18,17 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="bootstrap/css/styles.css">
-
     <style>
     th, td {
          border-top: 1px solid gray;
          padding-left: 5px;
          padding-right: 5px;
     }
+
+    .problem {
+        color: red;
+    }
+
     </style>
     <title>Orange Sensors</title>
 </head>
@@ -167,6 +171,7 @@ if(LoggedIn()) { ?>
         for (var i = <?php echo $min; ?>; i < <?php echo $max; ?>; ++i) {
             if ($('.timestamp' + i)) {
                 var ts = $('.timestamp' + i).html();
+                alert('ts = ' + ts + ' ' + (new Date().getTime() - new Date(ts).getTime() > 24*60*60*1000));
                 if (new Date().getTime() - new Date(ts).getTime() > 24*60*60*1000) {
                     $('.timestamp' + i).addClass('problem'); 
                 } else {
@@ -178,12 +183,6 @@ if(LoggedIn()) { ?>
     loadReadings();
     setInterval(loadReadings, 10000);
     </script>
-
-    <style>
-    .problem {
-        color: red;
-    }
-    </style>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
