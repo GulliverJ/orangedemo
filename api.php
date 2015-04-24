@@ -61,7 +61,14 @@
                 All documentation for the API, along with manuals and sample code, can be found <a href="">here.</a></p>
             </div>
             <div class="col-md-6">
-              <h2>Node.js API</h2>
+              <h2>Restful API</h2>
+              <p style="text-align: left">
+              Alternatively, make use of our Restful API built using node.js. It's quick and simple to make HTTP calls 
+              and integrate our data within your applications. </p><br>
+               <a class="btn btn-primary btn-lg sub-button" href="https://github.com/vnjk/OrangeSensorsRESTapi">Download from Github</a>
+               <p style="text-align: left"><br>Documentation on this API can be found <a href="">here.</a></p>
+
+
             </div>
       </div>  
     </section>  
