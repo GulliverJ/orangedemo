@@ -161,25 +161,18 @@ if(LoggedIn()) { ?>
      <script>
      function loadReadings() {
         $.getJSON('http://orange-peel.herokuapp.com/sensors/find/range/<?php echo $min . '/' . $max; ?>', function(data) {
-            alert('here' + value.timestamp);
             $.each(data, function(i, value) {
                 if ($('.reading' + value.global_id)) {
                     $('.reading' + value.global_id).html(value.reading);
                     $('.timestamp' + value.global_id).html(value.timestamp);
+                    if (new Date().getTime() - new Date(value.timestamp).getTime() > 24*60*60*1000) {
+                        $('.timestamp' + value.global_id).addClass('problem'); 
+                    } else {
+                        $('.timestamp' + value.global_id).removeClass('problem');
+                    }
                 }
             });
         });
-        for (var i = <?php echo $min; ?>; i < <?php echo $max; ?>; ++i) {
-            if ($('.timestamp' + i)) {
-                var ts = $('.timestamp' + i).html();
-                alert('ts = ' + ts + ' ' + (new Date().getTime() - new Date(ts).getTime() > 24*60*60*1000));
-                if (new Date().getTime() - new Date(ts).getTime() > 24*60*60*1000) {
-                    $('.timestamp' + i).addClass('problem'); 
-                } else {
-                    $('.timestamp' + i).removeClass('problem');
-                }
-            }
-        }
     };
     loadReadings();
     setInterval(loadReadings, 10000);
