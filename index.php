@@ -52,7 +52,7 @@
       <button type="submit" class="btn btn-default btn-lg" style="height: 48px; max-width: 200px; margin-bottom: 70px;">Go</button>
     </form>
       <p style="max-width: 480px; margin-left: auto; margin-right: auto; padding-bottom: 8px; margin-top: 72px">Orange Labs presents a new way to view the city, offering public access to hundreds of sensors providing real-time data.</p>
-      <a href="http://students.cs.ucl.ac.uk/2014/group10" style="color: #fca">Find out more</a>
+      <a href="#" style="color: #fca">Find out more</a>
     </div>
     <div class="content">
       <div class="container">
