@@ -42,7 +42,7 @@
             <li><a href="index.php">BROWSE</a></li>
             <li class="active"><a href="#">APIs</a></li>
             <li><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>PORTAL</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li><a href="http://students.cs.ucl.ac.uk/2014/group10">ABOUT</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -58,7 +58,7 @@
                 The Java API contains a wealth of methods for accessing public data from our database. It's as simple as adding the jarfile to your classpath and instantiating the API.</p>
               <a class="btn btn-primary btn-lg sub-button" href="https://github.com/GulliverJ/OrangeSensorsJavaAPI">Download from Github</a>
               <p style="text-align: left"><br>
-                All documentation for the API, along with manuals and sample code, can be found <a href="">here.</a></p>
+                All documentation for the API, along with manuals and sample code, can be found <a href="http://students.cs.ucl.ac.uk/2014/group10/docs.html">here.</a></p>
             </div>
             <div class="col-md-6">
               <h2>Restful API</h2>
@@ -66,7 +66,7 @@
               Alternatively, make use of our Restful API built using node.js. It's quick and simple to make HTTP calls 
               and integrate our data within your applications. </p><br>
                <a class="btn btn-primary btn-lg sub-button" href="https://github.com/vnjk/OrangeSensorsRESTapi">Download from Github</a>
-               <p style="text-align: left"><br>Documentation on this API can be found <a href="">here.</a></p>
+               <p style="text-align: left"><br>Documentation on this API can be found <a href="http://students.cs.ucl.ac.uk/2014/group10/docs.html">here.</a></p>
 
 
             </div>

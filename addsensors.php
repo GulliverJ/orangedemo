@@ -98,7 +98,7 @@
             <li><a href="index.php">BROWSE</a></li>
             <li><a href="api.php">APIs</a></li>
             <li><?php if(LoggedIn()) { ?><a href="portal.php"><?php } else { ?><a href="sign_in.php"><?php } ?>PORTAL</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li><a href="http://students.cs.ucl.ac.uk/2014/group10">ABOUT</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
